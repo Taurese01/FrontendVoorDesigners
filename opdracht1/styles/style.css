@@ -3,10 +3,45 @@
 /*********/
 /* FONTS */
 /*********/
+/* @font-face {
+	font-family: 'FIFA';
+	src: url('../fonts/EASPORTS15.ttf') format('FIFA');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+
+
+/* Fonts veranderen naar woff */
+
+/* @font-face {
+	font-family: 'EASports';
+	src: url('../fonts/EA_Sans_Curves_Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'FIFA';
+	src: url('../fonts/OutlastRegular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'EA_LOGO';
+	src: url('../fonts/EA_Logo.ttf');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+
+@font-face {
+	font-family: 'EA_LOGO';
+	src: url('../fonts/ea_logo-webfont.woff2') format('woff2'),
+			 url('../fonts/ea_logo-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -15,15 +50,56 @@
 
 
 
+@font-face {
+	font-family: 'EASports';
+	src: url('../fonts/ea_sans_curves_regular-webfont.woff2') format('woff2'),
+			 url('../fonts/ea_sans_curves_regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'FIFA';
+	src: url('../fonts/outlastregular-webfont.woff2') format('woff2'),
+			 url('../fonts/outlastregular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/* @font-face {
+	font-family: 'EASPORTS';
+	src: url('../fonts/EA Sans Curves Regular.ttf') format('EASPORTS');
+	font-weight: normal;
+	font-style: normal;
+}  */
+
+
+h1 {
+	font-family: 'FIFA';
+	display: flex;
+	/* max-width: 15.625em;
+  margin: auto; */
+}
+
+
+
 
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-button:not(:disabled), summary {
+button:not(:disabled),
+summary {
 	cursor: pointer;
 }
 
@@ -36,22 +112,235 @@ button:not(:disabled), summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #fff;
+	--border-color: #111;
 }
 
 
 
+/* DARK MODE */
 
+/* @media (prefers-color-scheme: dark) {
+	:root{
+	--color-text: #fff;
+	--color-background: #111;
+	--border-color: #fff;
+  }
+} */
+
+
+/* Reduced motion */
+@media (prefers-reduced-motion) {
+	h1 > span:nth-of-type(1) {
+		animation: none;
+	}
+
+	h1 > span:nth-of-type(2) {
+		animation: none;
+	}
+	
+	h1 span:nth-of-type(3) {
+		animation: none;
+	}
+	
+	h1 span:nth-of-type(4) {
+		animation: none;
+	}
+	
+	h1 span:nth-of-type(5) {
+		animation: none;
+	}
+
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 body {
-  font-family:eenfont, sans-serif;
-  color:var(--color-text);
-  background-color:var(--color-background);
+	font-family: eenfont, sans-serif;
+	color: var(--color-text);
+	background-color: var(--color-background);
+	height: 100vh;
+	margin: 0;
+	display: grid;
+	place-content: center;
 }
 
 /* jouw code */
+/* h1 > span:nth-of-type(1) { */
 
+	h1 > span {
+		display: flex;
+		justify-content: space-around;
+		width: 1em;
+	}
+
+/* h1 span:nth-of-type(1)::before */
+
+
+h1 > span:nth-of-type(1) {
+	border-radius: 50%;
+	width: 2em;
+	height:2em;
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: --border-color;
+	font-size: 1em;
+	text-align: center;
+	animation: rotation 4s linear;
+	animation-fill-mode: forwards;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+h1 span span:nth-of-type(1) {
+	font-family: EA_LOGO;
+	border: none;
+	animation: none;
+
+}
+
+h1 span span:nth-of-type(2) {
+	font-family: EASports;
+	font-size: 0.5em;
+	bottom: -2em;
+}
+
+
+
+/* De fifa letters */
+
+h1 > span:nth-of-type(2) {
+	font-size: 2em;
+	animation-name: LetterF-1;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	/* animation: rotation 2s linear; */
+}
+
+h1 span:nth-of-type(3) {
+	font-size: 2em;
+	animation-name: LetterI;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+}
+
+h1 span:nth-of-type(4) {
+	font-size: 2em;
+	animation-name: LetterF-2;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+}
+
+h1 span:nth-of-type(5) {
+	font-size: 2em;
+	animation-name: LetterA;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	/* animation: LetterA 1s, rotation 2s; */
+}
+
+
+
+
+
+/* De fifa letters animation */
+
+@keyframes LetterF-1 {
+	0% {
+		transform: translate(0);
+	}
+
+	33% {
+		transform: translate(-50%, -50%) rotate(30deg);
+	}
+
+	66% {
+		transform: translate(-75%, -75%);
+	}
+	100% {
+		transform: translate(0) rotate(-30deg);
+	}
+
+}
+
+@keyframes LetterI {
+	0% {
+		transform: translate(0);
+	}
+
+	33% {
+		transform: translate(50%, -50%) rotate(-30deg);
+	}
+
+	66% {
+		transform: translate(75%, -75%) rotate(-30deg);
+	}
+
+	100% {
+		transform: translate(0) rotate(30deg);
+	}
+}
+
+@keyframes LetterF-2 {
+	0% {
+		transform: translate(0);
+	}
+
+	33% {
+		transform: translate(-50%, -50%) rotate(30deg);
+	}
+
+	66% {
+		transform: translate(-75%, -75%);
+	}
+	100% {
+		transform: translate(0) rotate(-30deg);
+	}
+
+	
+}
+
+@keyframes LetterA {
+	0% {
+		transform: translate(0);
+	}
+
+	33% {
+		transform: translate(50%, -50%) rotate(-30deg);
+	}
+
+	66% {
+		transform: translate(75%, -75%) rotate(-30deg);
+	}
+
+	100% {
+		transform: translate(0) rotate(30deg);
+	}
+}
+
+
+/* Roterende bal */
+
+@keyframes rotation {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(30% ) rotate(360deg);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+
+
+}
