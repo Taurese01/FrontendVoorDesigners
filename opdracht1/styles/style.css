@@ -41,7 +41,7 @@
 @font-face {
 	font-family: 'EA_LOGO';
 	src: url('../fonts/ea_logo-webfont.woff2') format('woff2'),
-			 url('../fonts/ea_logo-webfont.woff') format('woff');
+		url('../fonts/ea_logo-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -53,7 +53,7 @@
 @font-face {
 	font-family: 'EASports';
 	src: url('../fonts/ea_sans_curves_regular-webfont.woff2') format('woff2'),
-			 url('../fonts/ea_sans_curves_regular-webfont.woff') format('woff');
+		url('../fonts/ea_sans_curves_regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -65,7 +65,7 @@
 @font-face {
 	font-family: 'FIFA';
 	src: url('../fonts/outlastregular-webfont.woff2') format('woff2'),
-			 url('../fonts/outlastregular-webfont.woff') format('woff');
+		url('../fonts/outlastregular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -131,23 +131,28 @@ summary {
 
 
 /* Reduced motion */
-@media (prefers-reduced-motion) {
-	h1 > span:nth-of-type(1) {
+@media (prefers-reduced-motion: reduce) {
+	
+	h1{
+		animation: none;
+	}
+	
+	h1>span:nth-of-type(1) {
 		animation: none;
 	}
 
-	h1 > span:nth-of-type(2) {
+	h1>span:nth-of-type(2) {
 		animation: none;
 	}
-	
+
 	h1 span:nth-of-type(3) {
 		animation: none;
 	}
-	
+
 	h1 span:nth-of-type(4) {
 		animation: none;
 	}
-	
+
 	h1 span:nth-of-type(5) {
 		animation: none;
 	}
@@ -170,19 +175,19 @@ body {
 /* jouw code */
 /* h1 > span:nth-of-type(1) { */
 
-	h1 > span {
-		display: flex;
-		justify-content: space-around;
-		width: 1em;
-	}
+h1>span {
+	display: flex;
+	justify-content: space-around;
+	width: 1em;
+}
 
 /* h1 span:nth-of-type(1)::before */
 
 
-h1 > span:nth-of-type(1) {
+h1>span:nth-of-type(1) {
 	border-radius: 50%;
 	width: 2em;
-	height:2em;
+	height: 2em;
 	border-style: solid;
 	border-width: 0.1em;
 	border-color: --border-color;
@@ -190,7 +195,7 @@ h1 > span:nth-of-type(1) {
 	text-align: center;
 	animation: rotation 4s linear;
 	animation-fill-mode: forwards;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
@@ -213,7 +218,7 @@ h1 span span:nth-of-type(2) {
 
 /* De fifa letters */
 
-h1 > span:nth-of-type(2) {
+h1>span:nth-of-type(2) {
 	font-size: 2em;
 	animation-name: LetterF-1;
 	animation-delay: 2s;
@@ -265,6 +270,7 @@ h1 span:nth-of-type(5) {
 	66% {
 		transform: translate(-75%, -75%);
 	}
+
 	100% {
 		transform: translate(0) rotate(-30deg);
 	}
@@ -301,11 +307,12 @@ h1 span:nth-of-type(5) {
 	66% {
 		transform: translate(-75%, -75%);
 	}
+
 	100% {
 		transform: translate(0) rotate(-30deg);
 	}
 
-	
+
 }
 
 @keyframes LetterA {
@@ -335,7 +342,7 @@ h1 span:nth-of-type(5) {
 	}
 
 	50% {
-		transform: translateX(30% ) rotate(360deg);
+		transform: translateX(30%) rotate(360deg);
 	}
 
 	100% {
@@ -343,4 +350,92 @@ h1 span:nth-of-type(5) {
 	}
 
 
+}
+
+
+
+/* Desktop en tablet versie */
+@media (min-width: 55em) {
+
+	h1>span {
+		width: 1.17em;
+	}
+
+
+	h1>span:nth-of-type(1) {
+		border-radius: 50%;
+		width: 3em;
+		height: 3em;
+		font-size: 1.5em;
+
+	}
+
+
+	h1 span span:nth-of-type(2) {
+		font-size: 0.75em;
+		bottom: -2em;
+	}
+
+
+
+	/* De fifa letters */
+
+	h1>span:nth-of-type(2) {
+		font-size: 3.5em;
+	}
+
+	h1 span:nth-of-type(3) {
+		font-size: 3.5em;
+	}
+
+	h1 span:nth-of-type(4) {
+		font-size: 3.5em;
+	}
+
+	h1 span:nth-of-type(5) {
+		font-size: 3.5em;
+	}
+
+
+
+}
+
+
+/* mobiele versie */
+@media (max-width: 25em) {
+
+	h1>span {
+		width: 1em;
+	}
+
+	h1>span:nth-of-type(1) {
+		width: 1.75em;
+		height: 1.75em;
+		font-size: 1em;
+
+	}
+
+
+	h1 span span:nth-of-type(2) {
+		font-size: 0.35em;
+	}
+
+
+	/* De fifa letters */
+
+	h1>span:nth-of-type(2) {
+		font-size: 1.5em;
+	}
+
+	h1 span:nth-of-type(3) {
+		font-size: 1.5em;
+	}
+
+	h1 span:nth-of-type(4) {
+		font-size: 1.5em;
+	}
+
+	h1 span:nth-of-type(5) {
+		font-size: 1.5em;
+	}
 }
