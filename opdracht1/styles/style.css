@@ -3,40 +3,6 @@
 /*********/
 /* FONTS */
 /*********/
-/* @font-face {
-	font-family: 'FIFA';
-	src: url('../fonts/EASPORTS15.ttf') format('FIFA');
-	font-weight: normal;
-	font-style: normal;
-} */
-
-
-
-/* Fonts veranderen naar woff */
-
-/* @font-face {
-	font-family: 'EASports';
-	src: url('../fonts/EA_Sans_Curves_Regular.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-@font-face {
-	font-family: 'FIFA';
-	src: url('../fonts/OutlastRegular.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-@font-face {
-	font-family: 'EA_LOGO';
-	src: url('../fonts/EA_Logo.ttf');
-	font-weight: normal;
-	font-style: normal;
-} */
-
 
 @font-face {
 	font-family: 'EA_LOGO';
@@ -71,19 +37,10 @@
 
 }
 
-/* @font-face {
-	font-family: 'EASPORTS';
-	src: url('../fonts/EA Sans Curves Regular.ttf') format('EASPORTS');
-	font-weight: normal;
-	font-style: normal;
-}  */
-
 
 h1 {
 	font-family: 'FIFA';
 	display: flex;
-	/* max-width: 15.625em;
-  margin: auto; */
 }
 
 
@@ -110,8 +67,8 @@ summary {
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
-	/* startje */
 	--color-text: #111;
 	--color-background: #fff;
 	--border-color: #111;
@@ -132,11 +89,11 @@ summary {
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-	
-	h1{
+
+	h1 {
 		animation: none;
 	}
-	
+
 	h1>span:nth-of-type(1) {
 		animation: none;
 	}
@@ -163,7 +120,7 @@ summary {
 /* JOUW STYLING */
 /****************/
 body {
-	font-family: eenfont, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	color: var(--color-text);
 	background-color: var(--color-background);
 	height: 100vh;
@@ -175,6 +132,7 @@ body {
 /* jouw code */
 /* h1 > span:nth-of-type(1) { */
 
+/* De letters in flex met de ruimte ertussen */
 h1>span {
 	display: flex;
 	justify-content: space-around;
@@ -183,7 +141,7 @@ h1>span {
 
 /* h1 span:nth-of-type(1)::before */
 
-
+/* De EA Sports inclusief balletje */
 h1>span:nth-of-type(1) {
 	border-radius: 50%;
 	width: 2em;
@@ -201,6 +159,7 @@ h1>span:nth-of-type(1) {
 
 }
 
+/* font van de EA tekst  */
 h1 span span:nth-of-type(1) {
 	font-family: EA_LOGO;
 	border: none;
@@ -208,6 +167,7 @@ h1 span span:nth-of-type(1) {
 
 }
 
+/* font van de Sports tekst  */
 h1 span span:nth-of-type(2) {
 	font-family: EASports;
 	font-size: 0.5em;
@@ -216,7 +176,7 @@ h1 span span:nth-of-type(2) {
 
 
 
-/* De fifa letters */
+/* De fifa letters + animatie toevoeging & duratie */
 
 h1>span:nth-of-type(2) {
 	font-size: 2em;
@@ -224,7 +184,6 @@ h1>span:nth-of-type(2) {
 	animation-delay: 2s;
 	animation-timing-function: linear;
 	animation-duration: 2s;
-	/* animation: rotation 2s linear; */
 }
 
 h1 span:nth-of-type(3) {
@@ -249,14 +208,13 @@ h1 span:nth-of-type(5) {
 	animation-delay: 2s;
 	animation-timing-function: linear;
 	animation-duration: 2s;
-	/* animation: LetterA 1s, rotation 2s; */
 }
 
 
 
 
 
-/* De fifa letters animation */
+/* De fifa letters animation, de letters gaan omhoog en draaien 30 en -30 graden */
 
 @keyframes LetterF-1 {
 	0% {
@@ -361,6 +319,7 @@ h1 span:nth-of-type(5) {
 		width: 1.17em;
 	}
 
+	/* Het EA Sports balletje op desktop en tablet schermen */
 
 	h1>span:nth-of-type(1) {
 		border-radius: 50%;
@@ -378,7 +337,7 @@ h1 span:nth-of-type(5) {
 
 
 
-	/* De fifa letters */
+	/* De fifa letters op grote schermen */
 
 	h1>span:nth-of-type(2) {
 		font-size: 3.5em;
@@ -408,6 +367,8 @@ h1 span:nth-of-type(5) {
 		width: 1em;
 	}
 
+	/* Het EA Sports balletje op mobiele schermen */
+
 	h1>span:nth-of-type(1) {
 		width: 1.75em;
 		height: 1.75em;
@@ -421,7 +382,7 @@ h1 span:nth-of-type(5) {
 	}
 
 
-	/* De fifa letters */
+	/* De fifa letters op mobiele schermen */
 
 	h1>span:nth-of-type(2) {
 		font-size: 1.5em;
