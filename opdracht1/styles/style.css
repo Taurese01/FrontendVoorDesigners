@@ -214,7 +214,9 @@ h1 span:nth-of-type(5) {
 
 
 
-/* De fifa letters animation, de letters gaan omhoog en draaien 30 en -30 graden */
+/* De fifa letters animation, de letters gaan omhoog en draaien 45 graden de ene kant op en vervolgens 45 graden de andere kant op*/
+
+
 
 @keyframes LetterF-1 {
 	0% {
@@ -222,18 +224,19 @@ h1 span:nth-of-type(5) {
 	}
 
 	33% {
-		transform: translate(-50%, -50%) rotate(30deg);
+		transform: translate(-50%, -50%) rotate(45deg);
 	}
 
 	66% {
-		transform: translate(-75%, -75%);
+		transform: translate(-75%, -75%) rotate(-45deg);
 	}
 
 	100% {
-		transform: translate(0) rotate(-30deg);
+		transform: translate(0) rotate(0deg);
 	}
 
 }
+
 
 @keyframes LetterI {
 	0% {
@@ -241,15 +244,15 @@ h1 span:nth-of-type(5) {
 	}
 
 	33% {
-		transform: translate(50%, -50%) rotate(-30deg);
+		transform: translate(50%, -50%) rotate(-45deg);
 	}
 
 	66% {
-		transform: translate(75%, -75%) rotate(-30deg);
+		transform: translate(75%, -75%) rotate(45deg);
 	}
 
 	100% {
-		transform: translate(0) rotate(30deg);
+		transform: translate(0) rotate(0deg);
 	}
 }
 
@@ -259,17 +262,16 @@ h1 span:nth-of-type(5) {
 	}
 
 	33% {
-		transform: translate(-50%, -50%) rotate(30deg);
+		transform: translate(-50%, -50%) rotate(45deg);
 	}
 
 	66% {
-		transform: translate(-75%, -75%);
+		transform: translate(-75%, -75%) rotate(-45deg);
 	}
 
 	100% {
-		transform: translate(0) rotate(-30deg);
+		transform: translate(0) rotate(0deg);
 	}
-
 
 }
 
@@ -279,20 +281,20 @@ h1 span:nth-of-type(5) {
 	}
 
 	33% {
-		transform: translate(50%, -50%) rotate(-30deg);
+		transform: translate(50%, -50%) rotate(-45deg);
 	}
 
 	66% {
-		transform: translate(75%, -75%) rotate(-30deg);
+		transform: translate(75%, -75%) rotate(45deg);
 	}
 
 	100% {
-		transform: translate(0) rotate(30deg);
+		transform: translate(0) rotate(0deg);
 	}
 }
 
 
-/* Roterende bal */
+/* Roterende bal die 360 graden draait en 30% horizontaal naar rechts beweegt */
 
 @keyframes rotation {
 	0% {
