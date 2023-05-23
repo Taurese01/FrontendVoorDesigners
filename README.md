@@ -48,9 +48,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je uitkomst - karakteristiek screenshot(s):
   <img src="readme-images/werkende-animatie1.png" width="375px" alt="uitomst opdracht 1">
+  
   <img src="readme-images/werkende-animatie2.png" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/darkmode-werkende-animatie1.png" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/darkmode-werkende-animatie2.png" width="375px" alt="uitomst opdracht 1">
+  
+  <img src="readme-images/werkende-animatie-darkmode1.png" width="375px" alt="uitomst opdracht 1">
+  
+  <img src="readme-images/werkende-animatie-darkmode2.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
