@@ -63,16 +63,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
  
   <img src="readme-images/wel-gelukt1.png" width="375px" alt="top">
-  
+  <strong>Custom Properties</strong>
+  Dit ging ook erg goed omdat ik dit ook al vorige keer ervaring mee had opgebouwd, ik vind dit verder ook een handige manier om alle 
+  kleuren goed te groeperen. 
   
   <img src="readme-images/wel-gelukt2.png" width="375px" alt="top">
+  <strong>Responsive voor diverse apparaten<strong>
+  Dat ging erg goed, omdat ik dit de vorige keer ook al had gedaan wist ik nog grotendeels hoe dit moest     
+  desondanks dat al een half jaar geleden is. Ik ben erg tevreden over hoe de website er uitziet op desktop en mobiele apparaten.
   
+  <img src="readme-images/wel-gelukt3.png" width="375px" alt="top">
+   <strong>Animatie Letters</strong>
   
-   <img src="readme-images/wel-gelukt3.png" width="375px" alt="top">
-  
-  
-   <img src="readme-images/wel-gelukt4.png" width="375px" alt="top">
-  
+  <img src="readme-images/wel-gelukt4.png" width="375px" alt="top">
+  <strong>Animatie balletje</strong>
   
 
 
