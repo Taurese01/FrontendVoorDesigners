@@ -62,11 +62,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatje(s)
 
  
+  
+  
+  
   <img src="readme-images/wel-gelukt1.png" width="375px" alt="top">
   
   <strong>Custom Properties</strong>
   Dit ging ook erg goed omdat ik dit ook al vorige keer ervaring mee had opgebouwd, ik vind dit verder ook een handige manier om alle 
   kleuren goed te groeperen. 
+  
+  
+  
   
   
   <img src="readme-images/wel-gelukt2.png" width="375px" alt="top">
@@ -76,11 +82,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   een animatie heb gecreerd waar ik tevreden mee was. 
   
   
+  
+  
   <img src="readme-images/wel-gelukt3.png" width="375px" alt="top">
   
   <strong>Animatie balletje</strong>
   Het animeren van het balletje vond ik erg leuk omdat dit in combinatie met de letters een volledig geheel toont, het balletje raakt de 
   letters aan en deze vliegen weg. Het was ook erg leuk om dit precies te timen qua locatie en tijd. 
+  
+  
   
   
   <img src="readme-images/wel-gelukt4.png" width="375px" alt="top">
@@ -91,6 +101,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
 
 
+  
+  
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
 
