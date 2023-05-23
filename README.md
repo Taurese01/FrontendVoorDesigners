@@ -14,9 +14,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -Sanne-
-  2. -W3Schools (voor keyframe en animation uitleg-
-  3. -...-
+  1. Sanne
+  2. W3Schools (voor keyframe en animation uitleg) https://www.w3schools.com/
+  3. CSSTricks.com (ook voor css animation uitleg)  https://css-tricks.com/ 
 
 
 
