@@ -108,7 +108,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/niet-gelukt1.png" width="375px" alt="top">
   
-  Met het maken van de <strong>reduced motion</strong> ging het niet zo goed, het is mij jammergenoeg niet gelukt.
+  
+  <strong>Reduced Motion:</strong>
+  
+  Met het maken van de reduced motion ging het niet zo goed, het is mij jammergenoeg niet gelukt.
   Ik heb van alles geprobeert (artikelen lezen, videos bekijken, het internet uitgebreid uitkammen) maar tervergeefs. 
 </details>
 
