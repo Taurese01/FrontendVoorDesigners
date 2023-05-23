@@ -79,11 +79,11 @@ summary {
 /* DARK MODE kleuren veranderen naar dark background en white tekst gebasseerd op system preference*/
 
 @media (prefers-color-scheme: dark) {
-	:root{
-	--color-text: #fff;
-	--color-background: #111;
-	--border-color: #fff;
-  }
+	:root {
+		--color-text: #fff;
+		--color-background: #111;
+		--border-color: #fff;
+	}
 }
 
 
@@ -315,7 +315,7 @@ h1 span:nth-of-type(5) {
 		width: 1.17em;
 	}
 
-	
+
 	/* Het EA Sports balletje op desktop en tablet schermen */
 
 	h1>span:nth-of-type(1) {
