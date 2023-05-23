@@ -32,10 +32,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - beter worden met het gebruik van keyframes
+  - beter worden met het gebruik van custom properties
+  - beter worden met het gebruik van nth-of-type() elementen
  
 </details>
 
