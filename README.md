@@ -54,18 +54,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/werkende-animatie-darkmode1.png" width="375px" alt="uitomst opdracht 1 darkmode animatie statisch">
   
   <img src="readme-images/werkende-animatie-darkmode2.png" width="375px" alt="uitomst opdracht 1 darkmode animatie bezig">
+  
+  Het maken van de animatie ging erg goed, ik had veel plezier met het maken van een animatie die ik zelf had bedacht. 
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+ 
+  <img src="readme-images/wel-gelukt1.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/niet-gelukt1.png" width="375px" alt="top">
+  Met het maken van de reduced motion ging het niet zo goed, het is mij jammergenoeg niet gelukt.
+  Ik heb van alles geprobeert (artikelen lezen, videos bekijken, het internet uitgebreid uitkammen) maar tervergeefs. 
 </details>
 
 
