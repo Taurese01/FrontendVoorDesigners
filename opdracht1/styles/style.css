@@ -76,15 +76,15 @@ summary {
 
 
 
-/* DARK MODE */
+/* DARK MODE kleuren veranderen naar dark background en white tekst gebasseerd op system preference*/
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root{
 	--color-text: #fff;
 	--color-background: #111;
 	--border-color: #fff;
   }
-} */
+}
 
 
 /* Reduced motion */
@@ -119,6 +119,8 @@ summary {
 /****************/
 /* JOUW STYLING */
 /****************/
+
+/* body styling (kleur, gecenterde items en kleur */
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: var(--color-text);
@@ -129,9 +131,6 @@ body {
 	place-content: center;
 }
 
-/* jouw code */
-/* h1 > span:nth-of-type(1) { */
-
 /* De letters in flex met de ruimte ertussen */
 h1>span {
 	display: flex;
@@ -139,9 +138,7 @@ h1>span {
 	width: 1em;
 }
 
-/* h1 span:nth-of-type(1)::before */
-
-/* De EA Sports inclusief balletje */
+/* De EA Sports inclusief balletje (code hulp van Sanne) */
 h1>span:nth-of-type(1) {
 	border-radius: 50%;
 	width: 2em;
@@ -159,7 +156,7 @@ h1>span:nth-of-type(1) {
 
 }
 
-/* font van de EA tekst  */
+/* font van de EA tekst inclusief size */
 h1 span span:nth-of-type(1) {
 	font-family: EA_LOGO;
 	border: none;
@@ -167,7 +164,7 @@ h1 span span:nth-of-type(1) {
 
 }
 
-/* font van de Sports tekst  */
+/* font van de Sports tekst inclusief size  */
 h1 span span:nth-of-type(2) {
 	font-family: EASports;
 	font-size: 0.5em;
@@ -176,8 +173,7 @@ h1 span span:nth-of-type(2) {
 
 
 
-/* De fifa letters + animatie toevoeging & duratie */
-
+/* De fifa letters font size + animatie toevoeging & duratie */
 h1>span:nth-of-type(2) {
 	font-size: 2em;
 	animation-name: LetterF-1;
@@ -215,8 +211,6 @@ h1 span:nth-of-type(5) {
 
 
 /* De fifa letters animation, de letters gaan omhoog en draaien 45 graden de ene kant op en vervolgens 45 graden de andere kant op*/
-
-
 
 @keyframes LetterF-1 {
 	0% {
@@ -321,6 +315,7 @@ h1 span:nth-of-type(5) {
 		width: 1.17em;
 	}
 
+	
 	/* Het EA Sports balletje op desktop en tablet schermen */
 
 	h1>span:nth-of-type(1) {
