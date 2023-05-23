@@ -69,6 +69,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatje(s)
 
   <img src="readme-images/niet-gelukt1.png" width="375px" alt="top">
+  
   Met het maken van de reduced motion ging het niet zo goed, het is mij jammergenoeg niet gelukt.
   Ik heb van alles geprobeert (artikelen lezen, videos bekijken, het internet uitgebreid uitkammen) maar tervergeefs. 
 </details>
