@@ -67,9 +67,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   <img src="readme-images/wel-gelukt1.png" width="375px" alt="top">
   
-  <strong>Custom Properties:</strong>
+  <strong>Custom Properties/Darkmode:</strong>
   Dit ging ook erg goed omdat ik dit ook al vorige keer ervaring mee had opgebouwd, ik vind dit verder ook een handige manier om alle 
-  kleuren goed te groeperen. 
+  kleuren goed te groeperen. Ook vond ik het erg leuk en handig om te zien dat de kleuren van de website worden aangepast door de 
+  instelling van mijn laptop.
   
   
   
