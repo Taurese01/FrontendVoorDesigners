@@ -63,9 +63,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
  
   <img src="readme-images/wel-gelukt1.png" width="375px" alt="top">
+  
+  
   <img src="readme-images/wel-gelukt2.png" width="375px" alt="top">
+  
+  
    <img src="readme-images/wel-gelukt3.png" width="375px" alt="top">
+  
+  
    <img src="readme-images/wel-gelukt4.png" width="375px" alt="top">
+  
+  
 
 
   ### Dit was lastig/Is niet gelukt:
