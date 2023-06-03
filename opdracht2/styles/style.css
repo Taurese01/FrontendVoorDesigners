@@ -4,14 +4,28 @@
 /* FONTS */
 /*********/
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'Spotify-bold';
+	src: url('../fonts/gotham-bold-webfont.woff') format('woff2'),
+		url('../fonts/gotham-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-
 }
 
+@font-face {
+	font-family: 'Spotify-regular';
+	src: url('../fonts/gotham-light-webfont.woff') format('woff2'),
+		url('../fonts/gotham-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Spotify-superbold';
+	src: url('../fonts/gotham-black-webfont.woff') format('woff2'),
+		url('../fonts/gotham-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 
@@ -19,11 +33,14 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-button:not(:disabled), summary {
+button:not(:disabled),
+summary {
 	cursor: pointer;
 }
 
@@ -36,8 +53,11 @@ button:not(:disabled), summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-text2: #fff;
+	--color-background: #ffffff;
+	--color-background2: #1db954;
+	--button-border-color: #000000;
 }
 
 
@@ -47,11 +67,158 @@ button:not(:disabled), summary {
 /****************/
 /* JOUW STYLING */
 /****************/
-body {
-  font-family:eenfont, sans-serif;
-  color:var(--color-text);
-  background-color:var(--color-background);
+
+html {
+	background-color: var(--color-background2);
 }
 
-/* jouw code */
+body {
+	font-family: eenfont, sans-serif;
+	color: var(--color-text);
+	/* background-color: var(--color-background); ALLEEN VOOR DESKTOP VERSIE */
+	max-width: 24.5em;
+	margin: auto;
+	border-radius: .5em;
+}
+
+
+h1 {
+	font-family: 'Spotify-superbold';
+	text-align: center;
+	color: var(--color-text2);
+	font-size: 45px;
+}
+
+h2 {
+	font-family: 'Spotify-bold';
+	text-align: center;
+	color: var(--color-text2);
+	font-size: 25px;
+}
+
+form {
+	font-family: 'Spotify-regular';
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+
+label {
+	line-height: 1em;
+	color: var(--color-text2);
+	
+}
+
+li {
+	background: var(--color-background);
+	border: 3px solid var(--button-border-color);
+	border-radius: 13px;
+	display: flex;
+	flex-direction: row;
+	padding: 0.5em;
+	/* display: flex; */
+}
+
+
+li > section button:nth-of-type(1){
+	transform: rotate(-90deg);
+	background: none;
+	border: none;
+	font-size: 1.5em;
+}
+li > section button:nth-of-type(2){
+	transform: rotate(-270deg);
+	background: none;
+	border: none;
+	font-size: 1.5em;
+}
+
+li > section:nth-of-type(2){
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding-left: 6.5em;
+}
+
+li > button:nth-of-type(1){
+	background: none;
+	border: none;
+	font-size: 1.5em;
+}
+
+li>section:nth-of-type(1){
+	padding-left: 0.5em;
+}
+
+li >section p:nth-of-type(1){
+	font-family: 'Spotify-bold';
+}
+li > section p:nth-of-type(2){
+	font-family: 'Spotify-regular';
+}
+
+
+ul {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+ul li img{
+	height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+
+form > button {
+	font-family: 'Spotify-bold';
+	border: 3px solid var(--button-border-color);
+	padding: 14px 15px;;
+	border-radius: 13px;
+	opacity: 1;
+}
+form > p{
+	color: var(--color-text2);
+	font-size: 1em;
+}
+
+ul > button {
+	font-family: 'Spotify-bold';
+	border: 3px solid var(--button-border-color);
+	padding: 14px 25px;
+	border-radius: 13px;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* Drag and drop */
+
+li.sortable-ghost {
+  /* jouw code hier */
+  opacity:.25;
+}
+
+/* styling van het versleepte item */
+li.sortable-drag {
+  /* jouw code hier */
+  background:gold;
+  cursor:grabbing;
+}
+
+
+
+
 

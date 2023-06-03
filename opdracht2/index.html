@@ -1,21 +1,276 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Taurese Usman">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
-	
+
 	<link href="styles/style.css" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body>
-	<h1>Opdracht 2</h1>
 
+<body id="theList">
+	<h1>Spotify Playlist Maker</h1>
+	<h2>Top 20 songs van het moment</h2>
+	<form>
+		<p>Sorteren op:</p>
+		<button class="sort" data-sort="name" type="button"> A&#10142;Z</button>
+		<button class="sort" data-sort="tijd" type="button" data-default-order='asc'> Duratie</button>
+		<button type="button" value="populairst">Schuffle Lijst</button>
+	</form>
+
+	<ul class="List">
+		<li tabindex="0">
+			<image src="./images/play-button.png" class="nummer1"></image>
+			<section>
+				<p class="name">God's Plan, Drake</p>
+				<p class="tijd">3:18</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Heartless, Kanye West</p>
+				<p class="tijd">3:31</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Blinding Lights, The Weeknd</p>
+				<p class="tijd">3:20</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Nights, Frank Ocean</p>
+				<p class="tijd">5:07</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Love Galore, SZA</p>
+				<p class="tijd">4:35</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Mr. Rager, Kid Cudi</p>
+				<p class="tijd">4:54</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Just Wanna Rock, Lil Uzi</p>
+				<p class="tijd">2:03</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Power, Kanye West</p>
+				<p class="tijd">4:52</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">The Hills, The Weeknd</p>
+				<p class="tijd">4:02</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Novacane, Frank Ocean</p>
+				<p class="tijd">5:02</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">As it Was, Harry Styles</p>
+				<p class="tijd">2:47</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">All The Stars, SZA</p>
+				<p class="tijd">3:52</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Crew Love, Drake</p>
+				<p class="tijd">3:28</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Bound 2, Kanye West</p>
+				<p class="tijd">3:49</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Metro Spider, Metro Boomin</p>
+				<p class="tijd">2:54</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Hurricane, Kanye West</p>
+				<p class="tijd">4:03</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Hit em up, Tupac Shakur</p>
+				<p class="tijd">5:12</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Stop Breathing, Playboi Carti</p>
+				<p class="tijd">3:38</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Come Together, Chris Brown</p>
+				<p class="tijd">3:54</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+		<li tabindex="0">
+			<image src="./images/play-button.png"></image>
+			<section>
+				<p class="name">Skeletons, Travis Scott</p>
+				<p class="tijd">2:25</p>
+			</section>
+			<section>
+				<button type="button" value="omhoog">&#10142;</button>
+				<button type="button" value="omlaag">&#10142;</button>
+			</section>
+			<button type="button" value="verwijderen">&#x1F5D1;</button>
+		</li>
+
+		<button>Alles Afspelen</button>
+	</ul>
 	<script defer src="scripts/script.js"></script>
 </body>
-	
+
 </html>
+
+
+
