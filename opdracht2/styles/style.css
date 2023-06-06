@@ -58,8 +58,18 @@ summary {
 	--color-background: #ffffff;
 	--color-background2: #1db954;
 	--button-border-color: #000000;
+	--drag-and-drop-background: #e1fceb;
 }
 
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--color-text: #111;
+		--color-text2: #d9dbda;
+		--color-background: #d9dbda;
+		--color-background2: #212121;
+		--button-border-color: #000000;
+	}
+} */
 
 
 
@@ -79,6 +89,27 @@ body {
 	max-width: 24.5em;
 	margin: auto;
 	border-radius: .5em;
+}
+
+form .sort.asc,
+.sort.desc {
+  font-weight:bold;
+}
+
+form .sort.asc::after {
+  content: "az↓";
+  padding-left: .25em;
+  font-weight:normal;
+	background-color: var(--button-border-color);
+	color: var(--color-text2);
+}
+
+form .sort.desc::after {
+  content: "za↓";
+  padding-left: .25em;
+  font-weight:normal;
+	background-color: var(--button-border-color);
+	color: var(--color-text2);
 }
 
 
@@ -104,6 +135,24 @@ form {
 	justify-content: space-between;
 }
 
+form > button {
+	font-family: 'Spotify-bold';
+	border: 3px solid var(--button-border-color);
+	padding: 14px 15px;;
+	border-radius: 13px;
+	opacity: 1;
+	background-color: var(--color-background);
+}
+form > p{
+	color: var(--color-text2);
+	font-size: 1em;
+}
+
+form > button:focus{
+	color: var(--color-text2);
+	background-color: var(--button-border-color);
+
+}
 
 
 label {
@@ -121,6 +170,11 @@ li {
 	padding: 0.5em;
 	/* display: flex; */
 }
+
+li:focus, li:focus-within {
+	border: 8px solid var(--button-border-color);
+}
+
 
 
 li > section button:nth-of-type(1){
@@ -161,6 +215,7 @@ li > section p:nth-of-type(2){
 }
 
 
+
 ul {
 	list-style: none;
 	padding: 0;
@@ -174,26 +229,15 @@ ul li img{
     margin: auto;
 }
 
-
-form > button {
-	font-family: 'Spotify-bold';
-	border: 3px solid var(--button-border-color);
-	padding: 14px 15px;;
-	border-radius: 13px;
-	opacity: 1;
-}
-form > p{
-	color: var(--color-text2);
-	font-size: 1em;
-}
-
-ul > button {
+div > button {
 	font-family: 'Spotify-bold';
 	border: 3px solid var(--button-border-color);
 	padding: 14px 25px;
 	border-radius: 13px;
 	opacity: 1;
+	width: 100%;
 }
+
 
 
 
@@ -214,7 +258,7 @@ li.sortable-ghost {
 /* styling van het versleepte item */
 li.sortable-drag {
   /* jouw code hier */
-  background:gold;
+  background: var(--drag-and-drop-background);
   cursor:grabbing;
 }
 
