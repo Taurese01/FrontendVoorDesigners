@@ -17,6 +17,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. Sanne
   2. W3Schools (voor keyframe en animation uitleg) https://www.w3schools.com/
   3. CSSTricks.com (ook voor css animation uitleg)  https://css-tricks.com/ 
+  4. Key up en down uitleg: https://www.youtube.com/watch?v=YUdc2szWz8Q
 
 
 
