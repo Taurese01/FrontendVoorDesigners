@@ -1,5 +1,3 @@
-/* CSS Document */
-
 /*********/
 /* FONTS */
 /*********/
@@ -57,8 +55,10 @@ summary {
 	--color-text2: #fff;
 	--color-background: #ffffff;
 	--color-background2: #1db954;
+	--button-focus-hover-background: #1db954;
 	--button-border-color: #000000;
 	--drag-and-drop-background: #e1fceb;
+	--hover-li-color: #dedede;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -67,7 +67,9 @@ summary {
 		--color-text2: #d9dbda;
 		--color-background: #d9dbda;
 		--color-background2: #212121;
+		--button-focus-hover-background: #e6e6e6;
 		--button-border-color: #000000;
+		--hover-li-color: #b8b8b8;
 	}
 } */
 
@@ -77,6 +79,7 @@ summary {
 /****************/
 /* JOUW STYLING */
 /****************/
+
 
 html {
 	background-color: var(--color-background2);
@@ -88,43 +91,41 @@ body {
 	/* background-color: var(--color-background); ALLEEN VOOR DESKTOP VERSIE */
 	max-width: 24.5em;
 	margin: auto;
-	border-radius: .5em;
+	border-radius: 0.5em;
 }
 
-form .sort.asc,
-.sort.desc {
-  font-weight:bold;
+/* algemene styling voor de ul */
+
+ul {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-gap: 1.5em;
 }
 
-form .sort.asc::after {
-  content: "az↓";
-  padding-left: .25em;
-  font-weight:normal;
-	background-color: var(--button-border-color);
-	color: var(--color-text2);
-}
 
-form .sort.desc::after {
-  content: "za↓";
-  padding-left: .25em;
-  font-weight:normal;
-	background-color: var(--button-border-color);
-	color: var(--color-text2);
-}
-
+/* Style voor o.a. voor form, h1, h2, p, li */
 
 h1 {
 	font-family: 'Spotify-superbold';
 	text-align: center;
 	color: var(--color-text2);
-	font-size: 45px;
+	font-size: 2.8125em;
 }
 
 h2 {
 	font-family: 'Spotify-bold';
 	text-align: center;
 	color: var(--color-text2);
-	font-size: 25px;
+	font-size: 1.5625em;
+}
+
+body>p {
+	font-family: 'Spotify-regular';
+	font-size: 0.9375em;
+	text-align: justify;
+	color: var(--color-text2);
+	padding-bottom: 0.5em;
 }
 
 form {
@@ -135,134 +136,228 @@ form {
 	justify-content: space-between;
 }
 
-form > button {
+form>button {
 	font-family: 'Spotify-bold';
-	border: 3px solid var(--button-border-color);
-	padding: 14px 15px;;
-	border-radius: 13px;
+	border: 0.1875em solid var(--button-border-color);
+	padding: 0.875em 0.9375em;
+	border-radius: 0.8125em;
 	opacity: 1;
 	background-color: var(--color-background);
 }
-form > p{
+
+form>p {
 	color: var(--color-text2);
 	font-size: 1em;
 }
 
-form > button:focus{
+form>button:focus {
 	color: var(--color-text2);
 	background-color: var(--button-border-color);
-
 }
 
 
 label {
 	line-height: 1em;
 	color: var(--color-text2);
-	
 }
 
 li {
 	background: var(--color-background);
-	border: 3px solid var(--button-border-color);
-	border-radius: 13px;
+	border: 0.1875em solid var(--button-border-color);
+	border-radius: 0.8125em;
 	display: flex;
 	flex-direction: row;
 	padding: 0.5em;
-	/* display: flex; */
+	cursor: grab;
 }
 
-li:focus, li:focus-within {
-	border: 8px solid var(--button-border-color);
+/* Code van hoe de buttons / li / checkboxes er uit zien wanneer deze worden aangeklikt zijn of er overheen wordt gehoverd */
+
+li:focus,
+li:focus-within{
+	border: 0.5em solid var(--button-border-color);
+	transition: 0.5s ease;
 }
 
+li:hover{
+	background-color: var(--hover-li-color);
+}
 
+li>section button:nth-of-type(1):focus,
+li>section button:nth-of-type(1):hover {
+	background-color: var(--button-focus-hover-background);
+	border-radius: 0.1em;
+	border: 0.125em solid var(--button-border-color);
+	cursor: pointer;
+}
 
-li > section button:nth-of-type(1){
+li>section button:nth-of-type(2):focus,
+li>section button:nth-of-type(2):hover {
+	background-color: var(--button-focus-hover-background);
+	border-radius: 0.1em;
+	cursor: pointer;
+	border: 0.125em solid var(--button-border-color);
+}
+
+li>button:nth-of-type(1):focus,
+li>button:nth-of-type(1):hover {
+	background-color: var(--button-focus-hover-background);
+	border-radius: 0.1em;
+	cursor: pointer;
+	border: 0.125em solid var(--button-border-color);
+}
+
+ul li input[type="checkbox"]:focus,
+ul li input[type="checkbox"]:hover {
+	border: 0.09375em solid var(--button-border-color);
+	border-radius: 2em;
+	background-color: var(--button-focus-hover-background);
+}
+
+/* uiterlijk van de buttons in de li */
+
+li>section button:nth-of-type(1) {
 	transform: rotate(-90deg);
 	background: none;
 	border: none;
 	font-size: 1.5em;
 }
-li > section button:nth-of-type(2){
+
+li>section button:nth-of-type(2) {
 	transform: rotate(-270deg);
 	background: none;
 	border: none;
 	font-size: 1.5em;
 }
 
-li > section:nth-of-type(2){
+li>section:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
 	padding-left: 6.5em;
 }
 
-li > button:nth-of-type(1){
+li>button:nth-of-type(1) {
 	background: none;
 	border: none;
 	font-size: 1.5em;
 }
 
-li>section:nth-of-type(1){
+li>section:nth-of-type(1) {
 	padding-left: 0.5em;
 }
 
-li >section p:nth-of-type(1){
+li>section p:nth-of-type(1) {
 	font-family: 'Spotify-bold';
 }
-li > section p:nth-of-type(2){
+
+li>section p:nth-of-type(2) {
 	font-family: 'Spotify-regular';
 }
 
-
-
-ul {
-	list-style: none;
-	padding: 0;
-	display: grid;
-	grid-gap: 1.5em;
+ul li img:nth-of-type(1) {
+	height: 3.125em;
+	width: 3.125em;
+	margin: auto;
 }
 
-ul li img{
-	height: 50px;
-    width: 50px;
-    margin: auto;
+li a img:focus {
+	content: url('./images/video-pause-button.png');
+	margin: auto;
 }
 
-div > button {
+div>button {
 	font-family: 'Spotify-bold';
-	border: 3px solid var(--button-border-color);
-	padding: 14px 25px;
-	border-radius: 13px;
+	border: 0.1875em solid var(--button-border-color);
+	padding: 0.875em 1.5625em;
+	border-radius: 0.8125em;
 	opacity: 1;
 	width: 100%;
 }
 
+/* Stijl voor de checkbox in li (play en pause button) */
 
+ul li input[type="checkbox"] {
+	content: url('../images/play-button.png');
+	margin: auto;
+	height: 3.125em;
+	width: 3.125em;
+	appearance: none;
+}
 
+ul li input[type="checkbox"]:checked {
+	content: url('../images/video-pause-button.png');
+	margin: auto;
+	height: 3.125em;
+	width: 3.125em;
+	appearance: none;
+	display: block;
+}
 
+/* Stijl voor uitgeschakelde up-knop */
 
-
-
-
-
-
+.disable-up {
+	background-color: #ffffff;
+	cursor: not-allowed;
+}
 
 /* Drag and drop */
 
 li.sortable-ghost {
-  /* jouw code hier */
-  opacity:.25;
+	opacity: 0.25;
+	cursor: grabbing;
 }
 
 /* styling van het versleepte item */
 li.sortable-drag {
-  /* jouw code hier */
-  background: var(--drag-and-drop-background);
-  cursor:grabbing;
+	background: var(--drag-and-drop-background);
+	cursor: grab;
 }
 
 
 
+/* desktop versie */
+@media (min-width: 60em) {
+
+	body {
+		max-width: 30.5em;
+	}
+
+	form>button {
+		padding: 0.875em 2em;
+	}
+
+	ul{
+		background-color: var(--color-background);
+    border: 2em solid var(--color-background);
+    border-radius: 0.8125em;
+}
+	}
 
 
+
+
+/* mobiele versie (was voor mobiel begonnen maar niet voor mini schermen */
+@media (max-width: 26em) {
+
+
+	body {
+		max-width: 17.5em;
+	}
+
+	form {
+		display: grid;
+		flex-direction: column;
+		justify-content: stretch;
+		grid-gap: 1em;
+	}
+	
+	form>button {
+		padding: 1.125em 0.125em;
+		border-radius: 1.1875em;
+	}
+
+	li>section:nth-of-type(2) {
+    padding-left: 0em;
+	}
+}

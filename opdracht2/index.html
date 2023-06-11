@@ -12,267 +12,319 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
+<!-- de body van de website, hier speelt alles zich eigelijk af -->
 
 <body>
 	<h1>Spotify Playlist Maker</h1>
 	<h2>Top 20 songs van het moment</h2>
+	<p>"Breng je party playlist tot leven met ongekende vrijheid: sorteer, sleep en geniet van je favoriete nummers op
+		jouw
+		manier! Ervaar ultieme controle over je muzikale reis: sorteer met een klik, beweeg met gemak en speel alle liedjes
+		af in een meeslepende lijst of één voor één. Ontdek de kracht van personalisatie: organiseer, beluister en wis
+		liedjes op jouw commando, zodat elke noot precies op de juiste plaats valt." </p>
 	<form>
 		<p>Sorteren op:</p>
-		<button class="sort1" data-sort="name" type="button">A-Z</button>
+		<!--De gebruiker heeft de keuze om te sorteren op titel, duratie of op een random volgorde-->
+		<button class="sort1" data-sort="name" type="button">Titel</button>
 		<button class="sort2" data-sort="tijd" type="button" data-default-order='asc'>Duratie</button>
-		<button type="button" value="populairst">Schuffle Lijst</button>
+		<button type="button" id="shuffle" value="shuffle">Schuffle Lijst</button>
 	</form>
 
+
+	<!-- De sections in de li mocht van sanne, dit heeft hij gezegt in de les tegen mij! -->
 	<div id="theList">
+
 		<ul class="list">
-			<li tabindex="0">
-				<image src="./images/play-button.png" class="nummer1"></image>
+			<!-- De li's worden 20x herhaald, allemaal met een eigen class, naam tijd. De up & down buttons en het prullenbakje is voor alle gelijk -->
+			<li>
+				<audio id="muziekje1" src="muziek/godsplan3.m4a"></audio>
+				<input type="checkbox" class="nummer1" />
 				<section>
 					<p class="name">God's Plan, Drake</p>
 					<p class="tijd">3:18</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje2" src="muziek/Heartless.mp3"></audio>
+				<input type="checkbox" class="nummer2" />
 				<section>
 					<p class="name">Heartless, Kanye West</p>
 					<p class="tijd">3:31</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje3" src="muziek/BlindingLights.mp3"></audio>
+				<input type="checkbox" class="nummer3" />
 				<section>
 					<p class="name">Blinding Lights, The Weeknd</p>
 					<p class="tijd">3:20</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje4" src="muziek/Nights.mp3"></audio>
+				<input type="checkbox" class="nummer4" />
 				<section>
 					<p class="name">Nights, Frank Ocean</p>
 					<p class="tijd">5:07</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje5" src="muziek/LoveGalore.mp3"></audio>
+				<input type="checkbox" class="nummer5" />
 				<section>
 					<p class="name">Love Galore, SZA</p>
 					<p class="tijd">4:35</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje6" src="muziek/Mr.Rager.mp3"></audio>
+				<input type="checkbox" class="nummer6" />
 				<section>
 					<p class="name">Mr. Rager, Kid Cudi</p>
 					<p class="tijd">4:54</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje7" src="muziek/JustWannaRock.mp3"></audio>
+				<input type="checkbox" class="nummer7" />
 				<section>
 					<p class="name">Just Wanna Rock, Lil Uzi</p>
 					<p class="tijd">2:03</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje8" src="muziek/POWER.mp3"></audio>
+				<input type="checkbox" class="nummer8" />
 				<section>
 					<p class="name">Power, Kanye West</p>
 					<p class="tijd">4:52</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje9" src="muziek/TheHills.mp3"></audio>
+				<input type="checkbox" class="nummer9" />
 				<section>
 					<p class="name">The Hills, The Weeknd</p>
 					<p class="tijd">4:02</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje10" src="muziek/Novacane.mp3"></audio>
+				<input type="checkbox" class="nummer10" />
 				<section>
 					<p class="name">Novacane, Frank Ocean</p>
 					<p class="tijd">5:02</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje11" src="muziek/AsItWas.mp3"></audio>
+				<input type="checkbox" class="nummer11" />
 				<section>
 					<p class="name">As it Was, Harry Styles</p>
 					<p class="tijd">2:47</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje12" src="muziek/AllTheStars.mp3"></audio>
+				<input type="checkbox" class="nummer12">
 				<section>
 					<p class="name">All The Stars, SZA</p>
 					<p class="tijd">3:52</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje13" src="muziek/Crew Love.mp3"></audio>
+				<input type="checkbox" class="nummer13" />
 				<section>
 					<p class="name">Crew Love, Drake</p>
 					<p class="tijd">3:28</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje14" src="muziek/Bound2.mp3"></audio>
+				<input type="checkbox" class="nummer14" />
 				<section>
 					<p class="name">Bound 2, Kanye West</p>
 					<p class="tijd">3:49</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje15" src="muziek/MetroSpider.mp3"></audio>
+				<input type="checkbox" class="nummer15" />
 				<section>
 					<p class="name">Metro Spider, Metro Boomin</p>
 					<p class="tijd">2:54</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje16" src="muziek/hurricane.m4a"></audio>
+				<input type="checkbox" class="nummer16" />
 				<section>
 					<p class="name">Hurricane, Kanye West</p>
 					<p class="tijd">4:03</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje17" src="muziek/HitEmUp.mp3"></audio>
+				<input type="checkbox" class="nummer17" />
 				<section>
 					<p class="name">Hit em up, Tupac Shakur</p>
 					<p class="tijd">5:12</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje18" src="muziek/StopBreathing.mp3"></audio>
+				<input type="checkbox" class="nummer18" />
 				<section>
 					<p class="name">Stop Breathing, Playboi Carti</p>
 					<p class="tijd">3:38</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje19" src="muziek/ComeTogether.mp3"></audio>
+				<input type="checkbox" class="nummer19" />
 				<section>
 					<p class="name">Come Together, Chris Brown</p>
 					<p class="tijd">3:54</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
-			<li tabindex="0">
-				<image src="./images/play-button.png"></image>
+
+			<li>
+				<audio id="muziekje20" src="muziek/SKELETONS.mp3"></audio>
+				<input type="checkbox" class="nummer20" />
 				<section>
 					<p class="name">Skeletons, Travis Scott</p>
 					<p class="tijd">2:25</p>
 				</section>
 				<section>
-					<button type="button" value="omhoog">&#10142;</button>
-					<button type="button" value="omlaag">&#10142;</button>
+					<button type="button" value="omhoog" class="omhoog">&#10142;</button>
+					<button type="button" value="omlaag" class="omlaag">&#10142;</button>
 				</section>
-				<button type="button" value="verwijderen">&#x1F5D1;</button>
+				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
 
-			
 		</ul>
-		<button>Alles Afspelen</button>
+
+		<!-- Dit geeft de gebruiker ook nog een optie om de lijst volledig achter elkaar af te laten spelen, erg handig op een feestje -->
+		<button class="Alles-Afspelen">Alles Afspelen</button>
+
 	</div>
-	
-	<script src="https://listjs.com/docs/"></script> 
-	<script src="https://sortablejs.github.io/Sortable/#simple-list"></script> 
+	<!-- de scripts naar de javasccript library's en het bestand-->
+	<script src="https://listjs.com/docs/"></script>
+	<script src="https://sortablejs.github.io/Sortable/#simple-list"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 	<script defer src="scripts/script.js"></script>
