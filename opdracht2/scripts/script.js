@@ -404,14 +404,15 @@ deleteButtons.forEach(function (button) {
 var shuffleButton = document.getElementById("shuffle");  // Selecteer het shuffle-knop element met behulp van de ID
 var list = document.querySelector(".list");  // Selecteer het lijst-element met behulp van de class-naam
 
-// Functie voor het shuffelen van de lijst d.m.v math random
+// Functie voor het shuffelen van de lijst d.m.v math random 
+// Info van https://stackoverflow.com/questions/7070054/javascript-shuffle-html-list-element-order
 function shuffleList() {
   for (var i = list.children.length; i >= 0; i--) {
-    list.appendChild(list.children[Math.random() * i | 0]);  // Kies een willekeurig element uit de lijst en verplaats het naar het einde van de lijst
+    list.appendChild(list.children[Math.random() * i | 0]); 
   }
 }
 
-shuffleButton.addEventListener("click", shuffleList);  // Voeg een event listener toe aan de shuffle-knop
+shuffleButton.addEventListener("click", shuffleList); 
 
 
 
@@ -424,17 +425,17 @@ const OmlaagKnop = document.querySelectorAll('.omlaag');
 
 function Omhoog() {
   const listItem = document.activeElement.closest('li'); // Vind het dichtstbijzijnde ouder list item van het actieve element
-  const VorigItem = listItem.previousElementSibling; // Vind het vorige sibling element van het list item
+  const VorigItem = listItem.previousElementSibling; // Vind het vorige element van het list item
   if (VorigItem) {
-    listItem.parentNode.insertBefore(listItem, VorigItem); // Verplaats het list item voor het vorige sibling element
+    listItem.parentNode.insertBefore(listItem, VorigItem); // Verplaats het list item voor het vorige element
   }
 }
 
 function Omlaag() {
-  const listItem = document.activeElement.closest('li'); // Vind het dichtstbijzijnde ouder list item van het actieve element
-  const VolgendItem = listItem.nextElementSibling; // Vind het volgende sibling element van het list item
+  const listItem = document.activeElement.closest('li'); // Vind het dichtstbijzijnde list item van het actieve element
+  const VolgendItem = listItem.nextElementSibling; // Vind het volgende element van het list item
   if (VolgendItem) {
-    listItem.parentNode.insertBefore(VolgendItem, listItem); // Verplaats het volgende sibling element voor het list item
+    listItem.parentNode.insertBefore(VolgendItem, listItem); // Verplaats het list item naar het volgende element
   }
 }
 
