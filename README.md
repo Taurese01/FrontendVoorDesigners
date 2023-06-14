@@ -150,11 +150,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevinding 1:
   Je kan nog niet de arrow buttons gebruiken omdat de li zelf niet word geselecteerd
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/probleem1-1.png" width="375px" alt="probleem1">
+   <img src="readme-images/probleem1-2.png" width="375px" alt="probleem1-2">
 
   #### oplossing:
   Dit heb ik gefixed om aan de li's een tabelindex te geven, nu worden ze geselecteerd wanneer ik er op druk en werken de arrow up en down   buttons goed.
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/oplossing1-1.png" width="375px" alt="oplossing1">
+  <img src="readme-images/oplossing1-2.png" width="375px" alt="oplossing1-2">
 
 
 
