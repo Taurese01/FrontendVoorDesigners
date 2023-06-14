@@ -107,21 +107,21 @@ ul {
 /* Style voor o.a. voor form, h1, h2, p, li */
 
 h1 {
-	font-family: 'Spotify-superbold';
+	font-family: 'Spotify-superbold', sans-serif;
 	text-align: center;
 	color: var(--color-text2);
 	font-size: 2.8125em;
 }
 
 h2 {
-	font-family: 'Spotify-bold';
+	font-family: 'Spotify-bold', sans-serif;
 	text-align: center;
 	color: var(--color-text2);
 	font-size: 1.5625em;
 }
 
 body>p {
-	font-family: 'Spotify-regular';
+	font-family: 'Spotify-regular', sans-serif;
 	font-size: 0.9375em;
 	text-align: justify;
 	color: var(--color-text2);
@@ -129,7 +129,7 @@ body>p {
 }
 
 form {
-	font-family: 'Spotify-regular';
+	font-family: 'Spotify-regular', sans-serif;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
@@ -137,7 +137,7 @@ form {
 }
 
 form>button {
-	font-family: 'Spotify-bold';
+	font-family: 'Spotify-bold', sans-serif;
 	border: 0.1875em solid var(--button-border-color);
 	padding: 0.875em 0.9375em;
 	border-radius: 0.8125em;
@@ -179,7 +179,7 @@ li:focus-within{
 	transition: 0.5s ease;
 }
 
-li:hover{
+li:hover {
 	background-color: var(--hover-li-color);
 }
 
@@ -248,11 +248,11 @@ li>section:nth-of-type(1) {
 }
 
 li>section p:nth-of-type(1) {
-	font-family: 'Spotify-bold';
+	font-family: 'Spotify-bold', sans-serif;
 }
 
 li>section p:nth-of-type(2) {
-	font-family: 'Spotify-regular';
+	font-family: 'Spotify-regular', sans-serif;
 }
 
 ul li img:nth-of-type(1) {
@@ -267,7 +267,7 @@ li a img:focus {
 }
 
 div>button {
-	font-family: 'Spotify-bold';
+	font-family: 'Spotify-bold', sans-serif;
 	border: 0.1875em solid var(--button-border-color);
 	padding: 0.875em 1.5625em;
 	border-radius: 0.8125em;
@@ -314,6 +314,17 @@ li.sortable-drag {
 	cursor: grab;
 }
 
+/* Animatie voor de op en neer knoppen en arrow keys */
+
+.move-up {
+  transition: transform 0.6s ease-in; 
+  transform: translateY(15%); 
+}
+
+.move-down {
+  transition: transform 0.6s ease-in;
+  transform: translateY(-15%); 
+}
 
 
 /* desktop versie */
@@ -327,12 +338,12 @@ li.sortable-drag {
 		padding: 0.875em 2em;
 	}
 
-	ul{
+	ul {
 		background-color: var(--color-background);
-    border: 2em solid var(--color-background);
-    border-radius: 0.8125em;
-}
+		border: 2em solid var(--color-background);
+		border-radius: 0.8125em;
 	}
+}
 
 
 
@@ -351,13 +362,13 @@ li.sortable-drag {
 		justify-content: stretch;
 		grid-gap: 1em;
 	}
-	
+
 	form>button {
 		padding: 1.125em 0.125em;
 		border-radius: 1.1875em;
 	}
 
 	li>section:nth-of-type(2) {
-    padding-left: 0em;
+		padding-left: 0em;
 	}
 }
