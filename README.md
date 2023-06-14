@@ -163,10 +163,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Op het moment van het testen was de desktop versie nog niet gefixt, deze zag er niet zo uit als het storyboard. 
+  
+   <img src="readme-images/probleem-2.png" width="375px" alt="probleem2">
+ 
+  
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Dit heb ik gefixt met een mediaquery en de onderstaande code. 
+  
+   <img src="readme-images/oplossing2.png" width="375px" alt="oplossing2">
 
 
 
