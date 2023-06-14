@@ -191,6 +191,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/oplossing3-2.png" width="375px" alt="oplossing3">
   <img src="readme-images/oplossing3-3.png" width="375px" alt="oplossing3">
   
+    ### Bevinding 4:
+  Tijdens het testen voor mobiel kwam ik er al snel achter dat de pijltjes knopjes niet werkte. 
+  
+  
+   #### oplossing:
+Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touchstart' toe te voegen bij de eventlistener.
+  
+  <img src="readme-images/oplossing4.png" width="375px" alt="oplossing4">
   
   
 </details>
