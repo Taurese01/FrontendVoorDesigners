@@ -165,7 +165,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevinding 2:
   Op het moment van het testen was de desktop versie nog niet gefixt, deze zag er niet zo uit als het storyboard. 
   
-   <img src="readme-images/probleem-2.png" width="375px" alt="probleem2">
+   <img src="readme-images/probleem2.png" width="375px" alt="probleem2">
  
   
 
