@@ -8,16 +8,15 @@ var audio = document.querySelectorAll("Audio")
 
 function liedje1() {
   if (liedjebezig1) {
-    muziekje1.pause();
-    liedjebezig1 = false;
-    muziekpauze();
-
+    muziekje1.pause(); // Pauzeer het liedje als het al aan het afspelen is
+    liedjebezig1 = false; // Markeer het liedje als niet bezig
+    muziekpauze(); // Zet alle liedjes op pauze (function word later in de code behandeld)
   } else {
-    muziekje1.play();
-    liedjebezig1 = true;
-
+    muziekje1.play(); // Speel het liedje af als het niet bezig is
+    liedjebezig1 = true; // Markeer het liedje als bezig
   }
 }
+
 
 var nummer2 = document.querySelector(".nummer2");
 var liedjebezig2 = false;
@@ -294,16 +293,11 @@ var pauze = document.querySelectorAll("audio");
 
 function muziekpauze() {
   pauze.forEach(function (audio) {
-    audio.pause(); // Pauzeer elk audiofragment
+    audio.pause(); // Pauzeer elke audio file in de html omdat er gebruik word gemaakt van de forEach en de querySelectorAll
   });
 }
 
-// hulp sanne
-// curAudio.addEventListener("ended", playNextSong)
-
-
-
-// De Event listeners voor het starten van het liedje!
+// De Event listeners voor het starten van het liedje (wanneer er op de button van een van de liedjes word geklikt speelt de desbetreffende function af)!
 nummer1.addEventListener("click", liedje1);
 nummer2.addEventListener("click", liedje2);
 nummer3.addEventListener("click", liedje3);
@@ -326,7 +320,8 @@ nummer19.addEventListener("click", liedje19);
 nummer20.addEventListener("click", liedje20);
 
 
-// code met behulp van Sanne's Codepen Sorteert de code op alfabetisch goed en alfabetisch omgekeerd & https://listjs.com/
+// hulpbron/inspiratie: code met behulp van Sanne's Codepen Sorteert de code op alfabetisch goed en alfabetisch omgekeerd & https://listjs.com/
+// Code zorgt ervoor dat de sorteer functies werken, deze worden geactiveerd door op de "Titel" of "Duratie" buttons te klikken
 var sort = document.querySelector(".sort1");
 var sort2 = document.querySelector(".sort2");
 var deOpties = {
@@ -345,14 +340,14 @@ function sortLiedjesNaam() {
     charactersList.sort('name', {
       order: 'asc'
     }); // Alfabetische volgorde
-    sortVolgordeNaam = 'desc';  
-    sort.textContent = 'A-Z'; // geprobeerd dit te fixen in de CSS maar tervergeefs
+    sortVolgordeNaam = 'desc';
+    sort.textContent = 'A-Z'; // geprobeerd dit te fixen in de CSS maar tervergeefs (past de tekst in de button aan)
   } else {
     charactersList.sort('name', {
       order: 'desc'
     }); // Omgekeerde alfabetische volgorde
     sortVolgordeNaam = 'asc';
-    sort.textContent = 'Z-A'; // geprobeerd dit te fixen in de CSS maar tervergeefs
+    sort.textContent = 'Z-A'; // geprobeerd dit te fixen in de CSS maar tervergeefs (past de tekst in de button aan)
   }
 }
 
@@ -362,13 +357,13 @@ function sortLiedjesTijd() {
       order: 'asc'
     }); // Oplopende liedjes duratie
     sortVolgordeTijd = 'desc';
-    sort2.textContent = 'Duratie ↑'; // geprobeerd dit te fixen in de CSS maar tervergeefs
+    sort2.textContent = 'Duratie ↑'; // geprobeerd dit te fixen in de CSS maar tervergeefs (past de tekst in de button aan)
   } else {
     charactersList.sort('tijd', {
       order: 'desc'
     }); // Aflopende liedjes duratie
     sortVolgordeTijd = 'asc';
-    sort2.textContent = 'Duratie ↓'; // geprobeerd dit te fixen in de CSS maar tervergeefs
+    sort2.textContent = 'Duratie ↓'; // geprobeerd dit te fixen in de CSS maar tervergeefs (past de tekst in de button aan)
   }
 }
 
@@ -377,12 +372,14 @@ sort2.addEventListener("click", sortLiedjesTijd);
 
 
 // Drag & Drop 
+// Deze code zorgt ervoor dat je de items in de list (liedjes) kan slepen en ze hiermee opnieuw kan ordenen, dit word gedaan d.m.v de library
 var list = document.querySelector(".list");
 new Sortable(list, {
   animation: 300, // ca 300ms is meestal een mooie tijd
 });
 
 
+// Verwijder button van de li
 // Dit zorgt ervoor dat wanneer er op een prullenbakje word gedrukt in een specifieke li dat de li word verwijderd
 var deleteButtons = document.querySelectorAll('#deleteButton');
 
@@ -400,60 +397,77 @@ deleteButtons.forEach(function (button) {
 
 
 // Shuffle knop
+// Wanneer er op de Shuffle button word geklikt word de lijst geshuffeld d.m.v math random
+// hulpbron/inspiratie van https://stackoverflow.com/questions/7070054/javascript-shuffle-html-list-element-order
 
-var shuffleButton = document.getElementById("shuffle");  // Selecteer het shuffle-knop element met behulp van de ID
-var list = document.querySelector(".list");  // Selecteer het lijst-element met behulp van de class-naam
+var shuffleButton = document.getElementById("shuffle"); // Selecteer het shuffle-knop met behulp van de ID
+var list = document.querySelector(".list"); // Selecteer de ul met behulp van de class-naam
 
-// Functie voor het shuffelen van de lijst d.m.v math random 
-// Info van https://stackoverflow.com/questions/7070054/javascript-shuffle-html-list-element-order
 function shuffleList() {
   for (var i = list.children.length; i >= 0; i--) {
-    list.appendChild(list.children[Math.random() * i | 0]); 
+    list.appendChild(list.children[Math.random() * i | 0]);
   }
 }
 
-shuffleButton.addEventListener("click", shuffleList); 
+shuffleButton.addEventListener("click", shuffleList);
 
 
 
 
 // Omhoog en omlaag (met behulp van het internet)
-// bron: combinatie van https://www.w3schools.com/jsref/prop_element_previouselementsibling.asp en https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
+// hulpbron/inspiratie: combinatie van https://www.w3schools.com/jsref/prop_element_previouselementsibling.asp, https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore, https://www.w3schools.com/js/js_htmldom_navigation.asp
+// Deze code zorgt ervoor dat je de liedjes (li's) opnieuw kan ordenen met de pijltjes knoppen (pijltje omhoog voor omhoog en pijltje omlaag voor omlaag).
 
 const OmhoogKnop = document.querySelectorAll('.omhoog');
 const OmlaagKnop = document.querySelectorAll('.omlaag');
 
 function Omhoog() {
-  const listItem = document.activeElement.closest('li'); // Vind het dichtstbijzijnde ouder list item van het actieve element
-  const VorigItem = listItem.previousElementSibling; // Vind het vorige element van het list item
-  if (VorigItem) {
-    listItem.parentNode.insertBefore(listItem, VorigItem); // Verplaats het list item voor het vorige element
+  const listItem = document.activeElement.closest('li'); // Vind de list item die het dichtste bij het pijltje zit.
+  if (listItem) {
+    const VorigItem = listItem.previousElementSibling; // Vind het vorige element van het list item
+    if (VorigItem) {
+      listItem.parentNode.insertBefore(listItem, VorigItem); // Verplaats het list item voor het vorige element
+      listItem.classList.add('move-up'); // maakt de "move up" class aan voor de animatie in css
+      setTimeout(() => {
+        listItem.classList.remove('move-up'); // Verwijderd de "move-up" class na 0.3 seconden 
+      }, 300);
+    }
   }
 }
 
 function Omlaag() {
-  const listItem = document.activeElement.closest('li'); // Vind het dichtstbijzijnde list item van het actieve element
-  const VolgendItem = listItem.nextElementSibling; // Vind het volgende element van het list item
-  if (VolgendItem) {
-    listItem.parentNode.insertBefore(VolgendItem, listItem); // Verplaats het list item naar het volgende element
+  const listItem = document.activeElement.closest('li'); // Vind de list item die het dichtste bij het pijltje zit.
+  if (listItem) {
+    const VolgendItem = listItem.nextElementSibling; // Vind het volgende element van het list item
+    if (VolgendItem) {
+      listItem.parentNode.insertBefore(VolgendItem, listItem); // Verplaats het list item naar het volgende element
+      listItem.classList.add('move-down'); // Maakt de "move down" class aan voor de animatie in css
+      setTimeout(() => {
+        listItem.classList.remove('move-down'); // Verwijderd de "move-down" class na 0.3 seconden 
+      }, 300);
+    }
   }
 }
 
+
+
 // het gebruiken van de arrow keys, de functie word aangeroepen als de keys worden ingedrukt op het toetsenbord
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
   if (event.key === 'ArrowUp') {
     Omhoog(); // Wanneer de arrow up key word ingedrukt dan word de functie omhoog opgeroepen
-  } else if (event.key === 'ArrowDown')  {
+  } else if (event.key === 'ArrowDown') {
     Omlaag(); // Wanneer de arrow down key word ingedrukt dan word de functie omlaag opgeroepen
   }
 });
 
 OmhoogKnop.forEach(function (button) {
   button.addEventListener('click', Omhoog);
+  button.addEventListener('touchstart', Omhoog); // Dit zorgt ervoor dat de pijltjes knoppen ook op mobiel werken (niet de responsive emulator maar echt op mijn telefoon zelf).
 });
 
 OmlaagKnop.forEach(function (button) {
-  button.addEventListener('click', Omlaag); 
+  button.addEventListener('click', Omlaag);
+  button.addEventListener('touchstart', Omlaag);  // Dit zorgt ervoor dat de pijltjes knoppen ook op mobiel werken (niet de responsive emulator maar echt op mijn telefoon zelf).
 });
 
 
