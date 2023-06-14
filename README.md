@@ -175,9 +175,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
    <img src="readme-images/oplossing2.png" width="375px" alt="oplossing2">
 
 
-
   ### Bevinding 3:
-  ...
+  Er toonde geen animatie bij het drukken van de pijltjes knoppen, de tekst veranderde en plaats veranderde maar je zag niet dat dit 
+  gebeurde.
+  
+ <img src="readme-images/probleem3-1.png" width="375px" alt="probleem3">
+ <img src="readme-images/probleem3-2.png" width="375px" alt="probleem3">
+ <img src="readme-images/probleem3-3.png" width="375px" alt="probleem3">
+  
+  
+   #### oplossing:
+  Met behulp van het internet ben ik erachter gekomen hoe ik dit kan fixen, dit kan ik doen d.m.v het aanmaken van een class in de javascript, dit ziet er zo uit.
+  
+  <img src="readme-images/oplossing3-1.png" width="375px" alt="oplossing3">
+  <img src="readme-images/oplossing3-2.png" width="375px" alt="oplossing3">
+  <img src="readme-images/oplossing3-3.png" width="375px" alt="oplossing3">
+  
+  
+  
 </details>
 
 
