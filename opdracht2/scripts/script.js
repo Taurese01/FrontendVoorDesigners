@@ -1,10 +1,54 @@
-// alle liedjes van de website 
-// Regel 5 t/m 289 (code word 20 keer herhaald)
-// De function zorgt ervoor dat er word gekeken of het nummer afspeeld, als dit het geval is dan zet hij deze op pauze, en als dit niet het geval is dan word deze gestart. 
+// Liedjes afspelen functie regel 2 tot en met 273
 
+// de variabele selecteerd alle audio files van de html
+var audio = document.querySelectorAll("Audio");
+
+// een variabele aan voor de checkbox afbeelding (de afspelen / pauze knop)
 var nummer1 = document.querySelector(".nummer1");
+var nummer2 = document.querySelector(".nummer2");
+var nummer3 = document.querySelector(".nummer3");
+var nummer4 = document.querySelector(".nummer4");
+var nummer5 = document.querySelector(".nummer5");
+var nummer6 = document.querySelector(".nummer6");
+var nummer7 = document.querySelector(".nummer7");
+var nummer8 = document.querySelector(".nummer8");
+var nummer9 = document.querySelector(".nummer9");
+var nummer10 = document.querySelector(".nummer10");
+var nummer11 = document.querySelector(".nummer11");
+var nummer12 = document.querySelector(".nummer12");
+var nummer13 = document.querySelector(".nummer13");
+var nummer14 = document.querySelector(".nummer14");
+var nummer15 = document.querySelector(".nummer15");
+var nummer16 = document.querySelector(".nummer16");
+var nummer17 = document.querySelector(".nummer17");
+var nummer18 = document.querySelector(".nummer18");
+var nummer19 = document.querySelector(".nummer19");
+var nummer20 = document.querySelector(".nummer20");
+
+// het liedje afspelen krijgt de waarde false omdat deze niet automatisch afspeeld
 var liedjebezig1 = false;
-var audio = document.querySelectorAll("Audio")
+var liedjebezig2 = false;
+var liedjebezig3 = false;
+var liedjebezig4 = false;
+var liedjebezig5 = false;
+var liedjebezig6 = false;
+var liedjebezig7 = false;
+var liedjebezig8 = false;
+var liedjebezig9 = false;
+var liedjebezig10 = false;
+var liedjebezig11 = false;
+var liedjebezig12 = false;
+var liedjebezig13 = false;
+var liedjebezig14 = false;
+var liedjebezig15 = false;
+var liedjebezig16 = false;
+var liedjebezig17 = false;
+var liedjebezig18 = false;
+var liedjebezig19 = false;
+var liedjebezig20 = false;
+
+// Regel 51 t/m 273 (code word 20 keer herhaald)
+// De function zorgt ervoor dat er word gekeken of het nummer afspeeld, als dit het geval is dan zet hij deze op pauze, en als dit niet het geval is dan word deze gestart. 
 
 function liedje1() {
   if (liedjebezig1) {
@@ -13,13 +57,9 @@ function liedje1() {
     muziekpauze(); // Zet alle liedjes op pauze (function word later in de code behandeld)
   } else {
     muziekje1.play(); // Speel het liedje af als het niet bezig is
-    liedjebezig1 = true; // Markeer het liedje als bezig
+    liedjebezig1 = true; // Markeert het liedje als bezig
   }
 }
-
-
-var nummer2 = document.querySelector(".nummer2");
-var liedjebezig2 = false;
 
 function liedje2() {
   if (liedjebezig2) {
@@ -33,9 +73,6 @@ function liedje2() {
   }
 }
 
-var nummer3 = document.querySelector(".nummer3");
-var liedjebezig3 = false;
-
 function liedje3() {
   if (liedjebezig3) {
     muziekje3.pause();
@@ -46,9 +83,6 @@ function liedje3() {
     liedjebezig3 = true;
   }
 }
-
-var nummer4 = document.querySelector(".nummer4");
-var liedjebezig4 = false;
 
 function liedje4() {
   if (liedjebezig4) {
@@ -61,9 +95,6 @@ function liedje4() {
   }
 }
 
-var nummer5 = document.querySelector(".nummer5");
-var liedjebezig5 = false;
-
 function liedje5() {
   if (liedjebezig5) {
     muziekje5.pause();
@@ -74,9 +105,6 @@ function liedje5() {
     liedjebezig5 = true;
   }
 }
-
-var nummer6 = document.querySelector(".nummer6");
-var liedjebezig6 = false;
 
 function liedje6() {
   if (liedjebezig6) {
@@ -89,9 +117,6 @@ function liedje6() {
   }
 }
 
-var nummer7 = document.querySelector(".nummer7");
-var liedjebezig7 = false;
-
 function liedje7() {
   if (liedjebezig7) {
     muziekje7.pause();
@@ -102,9 +127,6 @@ function liedje7() {
     liedjebezig7 = true;
   }
 }
-
-var nummer8 = document.querySelector(".nummer8");
-var liedjebezig8 = false;
 
 function liedje8() {
   if (liedjebezig8) {
@@ -117,9 +139,6 @@ function liedje8() {
   }
 }
 
-var nummer9 = document.querySelector(".nummer9");
-var liedjebezig9 = false;
-
 function liedje9() {
   if (liedjebezig9) {
     muziekje9.pause();
@@ -130,9 +149,6 @@ function liedje9() {
     liedjebezig9 = true;
   }
 }
-
-var nummer10 = document.querySelector(".nummer10");
-var liedjebezig10 = false;
 
 function liedje10() {
   if (liedjebezig10) {
@@ -145,9 +161,6 @@ function liedje10() {
   }
 }
 
-var nummer11 = document.querySelector(".nummer11");
-var liedjebezig11 = false;
-
 function liedje11() {
   if (liedjebezig11) {
     muziekje11.pause();
@@ -158,9 +171,6 @@ function liedje11() {
     liedjebezig11 = true;
   }
 }
-
-var nummer12 = document.querySelector(".nummer12");
-var liedjebezig12 = false;
 
 function liedje12() {
   if (liedjebezig12) {
@@ -173,9 +183,6 @@ function liedje12() {
   }
 }
 
-var nummer13 = document.querySelector(".nummer13");
-var liedjebezig13 = false;
-
 function liedje13() {
   if (liedjebezig13) {
     muziekje13.pause();
@@ -186,10 +193,6 @@ function liedje13() {
     liedjebezig13 = true;
   }
 }
-
-
-var nummer14 = document.querySelector(".nummer14");
-var liedjebezig14 = false;
 
 function liedje14() {
   if (liedjebezig14) {
@@ -202,9 +205,6 @@ function liedje14() {
   }
 }
 
-var nummer15 = document.querySelector(".nummer15");
-var liedjebezig15 = false;
-
 function liedje15() {
   if (liedjebezig15) {
     muziekje15.pause();
@@ -215,9 +215,6 @@ function liedje15() {
     liedjebezig15 = true;
   }
 }
-
-var nummer16 = document.querySelector(".nummer16");
-var liedjebezig16 = false;
 
 function liedje16() {
   if (liedjebezig16) {
@@ -230,9 +227,6 @@ function liedje16() {
   }
 }
 
-var nummer17 = document.querySelector(".nummer17");
-var liedjebezig17 = false;
-
 function liedje17() {
   if (liedjebezig17) {
     muziekje17.pause();
@@ -243,9 +237,6 @@ function liedje17() {
     liedjebezig17 = true;
   }
 }
-
-var nummer18 = document.querySelector(".nummer18");
-var liedjebezig18 = false;
 
 function liedje18() {
   if (liedjebezig18) {
@@ -258,9 +249,6 @@ function liedje18() {
   }
 }
 
-var nummer19 = document.querySelector(".nummer19");
-var liedjebezig19 = false;
-
 function liedje19() {
   if (liedjebezig19) {
     muziekje19.pause();
@@ -271,10 +259,6 @@ function liedje19() {
     liedjebezig19 = true;
   }
 }
-
-
-var nummer20 = document.querySelector(".nummer20");
-var liedjebezig20 = false;
 
 function liedje20() {
   if (liedjebezig20) {
@@ -322,6 +306,7 @@ nummer20.addEventListener("click", liedje20);
 
 // hulpbron/inspiratie: code met behulp van Sanne's Codepen Sorteert de code op alfabetisch goed en alfabetisch omgekeerd & https://listjs.com/
 // Code zorgt ervoor dat de sorteer functies werken, deze worden geactiveerd door op de "Titel" of "Duratie" buttons te klikken
+// regel 310 tot en met 356
 var sort = document.querySelector(".sort1");
 var sort2 = document.querySelector(".sort2");
 var deOpties = {
@@ -329,7 +314,7 @@ var deOpties = {
 };
 
 // Stap 3.
-var charactersList = new List('theList', deOpties);
+var SorteerLijst = new List('theList', deOpties);
 
 // Stap 4.
 var sortVolgordeNaam = 'asc';
@@ -337,13 +322,13 @@ var sortVolgordeTijd = 'asc';
 
 function sortLiedjesNaam() {
   if (sortVolgordeNaam === 'asc') {
-    charactersList.sort('name', {
+    SorteerLijst.sort('name', {
       order: 'asc'
     }); // Alfabetische volgorde
     sortVolgordeNaam = 'desc';
     sort.textContent = 'A-Z'; // geprobeerd dit te fixen in de CSS maar tervergeefs (past de tekst in de button aan)
   } else {
-    charactersList.sort('name', {
+    SorteerLijst.sort('name', {
       order: 'desc'
     }); // Omgekeerde alfabetische volgorde
     sortVolgordeNaam = 'asc';
@@ -353,15 +338,15 @@ function sortLiedjesNaam() {
 
 function sortLiedjesTijd() {
   if (sortVolgordeTijd === 'asc') {
-    charactersList.sort('tijd', {
+    SorteerLijst.sort('tijd', {
       order: 'asc'
-    }); // Oplopende liedjes duratie
+    }); // Oplopende liedjes duratie (zoekt naar dichtstbijst 0:00)
     sortVolgordeTijd = 'desc';
     sort2.textContent = 'Duratie ↑'; // geprobeerd dit te fixen in de CSS maar tervergeefs (past de tekst in de button aan)
   } else {
-    charactersList.sort('tijd', {
+    SorteerLijst.sort('tijd', {
       order: 'desc'
-    }); // Aflopende liedjes duratie
+    }); // Aflopende liedjes duratie (zoekt naar dichtstbijst 9:99)
     sortVolgordeTijd = 'asc';
     sort2.textContent = 'Duratie ↓'; // geprobeerd dit te fixen in de CSS maar tervergeefs (past de tekst in de button aan)
   }
@@ -373,6 +358,7 @@ sort2.addEventListener("click", sortLiedjesTijd);
 
 // Drag & Drop 
 // Deze code zorgt ervoor dat je de items in de list (liedjes) kan slepen en ze hiermee opnieuw kan ordenen, dit word gedaan d.m.v de library
+// Regel 363 tot en met 366
 var list = document.querySelector(".list");
 new Sortable(list, {
   animation: 300, // ca 300ms is meestal een mooie tijd
@@ -381,12 +367,14 @@ new Sortable(list, {
 
 // Verwijder button van de li
 // Dit zorgt ervoor dat wanneer er op een prullenbakje word gedrukt in een specifieke li dat de li word verwijderd
+// Er word gezocht naar de li die het dichtsbijst is (degene van het prullenbakje), deze word word verwijderd uit de ul
+// Regel 372 tot en met 383
 var deleteButtons = document.querySelectorAll('#deleteButton');
 
 function deleteListItem() {
-  var listItem = this.closest('li');
+  var listItem = this.closest('li');  // Er word gezocht naar de li die het dichtsbijst is (degene van het prullenbakje)
   if (listItem) {
-    listItem.remove();
+    listItem.remove(); // verwijderd de li 
   }
 }
 
@@ -397,26 +385,28 @@ deleteButtons.forEach(function (button) {
 
 
 // Shuffle knop
-// Wanneer er op de Shuffle button word geklikt word de lijst geshuffeld d.m.v math random
+// Wanneer er op de Shuffle button word geklikt word de lijst geshuffeld d.m.v math random (begrijp deze niet zo goed)
 // hulpbron/inspiratie van https://stackoverflow.com/questions/7070054/javascript-shuffle-html-list-element-order
+// Regel 392 tot en met 402 
 
 var shuffleButton = document.getElementById("shuffle"); // Selecteer het shuffle-knop met behulp van de ID
 var list = document.querySelector(".list"); // Selecteer de ul met behulp van de class-naam
 
 function shuffleList() {
-  for (var i = list.children.length; i >= 0; i--) {
-    list.appendChild(list.children[Math.random() * i | 0]);
+  var children = list.children;
+  var length = children.length; // Lengte van de lijst
+  for (var i = length; i >= 0; i--) {
+    var randomIndex = Math.random() * i | 0; // Kies een willekeurig getal tussen 0 en i 
+    list.appendChild(children[randomIndex]); // Verplaatst het naar het einde van de lijst met liedjes
   }
 }
-
 shuffleButton.addEventListener("click", shuffleList);
-
-
 
 
 // Omhoog en omlaag (met behulp van het internet)
 // hulpbron/inspiratie: combinatie van https://www.w3schools.com/jsref/prop_element_previouselementsibling.asp, https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore, https://www.w3schools.com/js/js_htmldom_navigation.asp
 // Deze code zorgt ervoor dat je de liedjes (li's) opnieuw kan ordenen met de pijltjes knoppen (pijltje omhoog voor omhoog en pijltje omlaag voor omlaag).
+// Regel 411 tot en met 459
 
 const OmhoogKnop = document.querySelectorAll('.omhoog');
 const OmlaagKnop = document.querySelectorAll('.omlaag');
@@ -449,8 +439,6 @@ function Omlaag() {
   }
 }
 
-
-
 // het gebruiken van de arrow keys, de functie word aangeroepen als de keys worden ingedrukt op het toetsenbord
 document.addEventListener('keydown', function (event) {
   if (event.key === 'ArrowUp') {
@@ -467,7 +455,36 @@ OmhoogKnop.forEach(function (button) {
 
 OmlaagKnop.forEach(function (button) {
   button.addEventListener('click', Omlaag);
-  button.addEventListener('touchstart', Omlaag);  // Dit zorgt ervoor dat de pijltjes knoppen ook op mobiel werken (niet de responsive emulator maar echt op mijn telefoon zelf).
+  button.addEventListener('touchstart', Omlaag); // Dit zorgt ervoor dat de pijltjes knoppen ook op mobiel werken (niet de responsive emulator maar echt op mijn telefoon zelf).
 });
 
 
+// Alles afspelen knop (met behulp van het internet) 
+// hulpbron/inspiratie: die ik als hulp heb gebruikt hiervoor: https://stackoverflow.com/questions/67584286/how-to-play-multiple-audio-files-one-by-one-in-html-5
+// Code vind ik nog erg lastig en begrijp ik niet volledig (geen vragen over stellen)
+// Regel 467 tot en met 490
+
+var AllesAfspelen = document.querySelector(".Alles-Afspelen"); // Selecteer de Alles-Afspelen knop d.m.v de class naam
+var DeLiedjes = document.getElementsByTagName("audio"); // Verzamelt alle audio-elementen in mijn HTML
+var HuidigLiedje = 0; // Houd bij welk liedje momenteel wordt afgespeeld
+var AfspelenAlGestart = false; // Geeft aan of het afspelen van alle liedjes al is gestart
+
+function SpeelLiedjeAf() {
+  if (HuidigLiedje < DeLiedjes.length) {
+    DeLiedjes[HuidigLiedje].play(); // Speel het huidige liedje af
+    DeLiedjes[HuidigLiedje].addEventListener("ended", function () {
+      HuidigLiedje++; // Ga naar het volgende liedje als het huidige liedje is afgelopen d.m.v de ++ word de steeds verhoogd met 1
+      SpeelLiedjeAf(); // Speel het volgende liedje af
+    });
+  } else {
+    HuidigLiedje = 0; // Wanneer alle liedjes zijn afgespeeld, reset het de lijst
+    AfspelenAlGestart = false; // Markeert het afspelen van de liedjes als niet gestart
+  }
+}
+
+AllesAfspelen.addEventListener("click", function () {
+  if (!AfspelenAlGestart) {
+    AfspelenAlGestart = true; // Markeert het afspelen als gestart
+    SpeelLiedjeAf(); // Start het afspelen van de liedjes
+  }
+});

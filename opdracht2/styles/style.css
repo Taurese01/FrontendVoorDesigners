@@ -43,9 +43,6 @@ summary {
 }
 
 
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -74,13 +71,12 @@ summary {
 } */
 
 
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
 
 
+/* Styling van de html en body (de groene achterkleur, positionering, width ect. */
 html {
 	background-color: var(--color-background2);
 }
@@ -161,6 +157,8 @@ label {
 	color: var(--color-text2);
 }
 
+/* basis styling voor de Li's (liedjes) (display flex en flex direction row zorgen ervoor dat list items zich onder elkaar bevinden  */
+
 li {
 	background: var(--color-background);
 	border: 0.1875em solid var(--button-border-color);
@@ -214,7 +212,7 @@ ul li input[type="checkbox"]:hover {
 	background-color: var(--button-focus-hover-background);
 }
 
-/* uiterlijk van de buttons in de li */
+/* uiterlijk van de buttons in de li (pijltjes, delete button) */
 
 li>section button:nth-of-type(1) {
 	transform: rotate(-90deg);
@@ -230,6 +228,8 @@ li>section button:nth-of-type(2) {
 	font-size: 1.5em;
 }
 
+/* helaas positionering alleen kunnen fixen met padding-left */
+
 li>section:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;
@@ -243,6 +243,8 @@ li>button:nth-of-type(1) {
 	font-size: 1.5em;
 }
 
+/* styling voor tekst binnen de li's  */
+
 li>section:nth-of-type(1) {
 	padding-left: 0.5em;
 }
@@ -255,16 +257,16 @@ li>section p:nth-of-type(2) {
 	font-family: 'Spotify-regular', sans-serif;
 }
 
+
+/* uiterlijk van de buttons in de li (pijltjes, delete button) */
+
 ul li img:nth-of-type(1) {
 	height: 3.125em;
 	width: 3.125em;
 	margin: auto;
 }
 
-li a img:focus {
-	content: url('./images/video-pause-button.png');
-	margin: auto;
-}
+/* styling voor de alles afspelen button */
 
 div>button {
 	font-family: 'Spotify-bold', sans-serif;
@@ -273,6 +275,12 @@ div>button {
 	border-radius: 0.8125em;
 	opacity: 1;
 	width: 100%;
+	margin-bottom: 1em;
+}
+
+div>button:focus {
+	color: var(--color-text2);
+	background-color: var(--button-border-color);
 }
 
 /* Stijl voor de checkbox in li (play en pause button) */
@@ -292,13 +300,6 @@ ul li input[type="checkbox"]:checked {
 	width: 3.125em;
 	appearance: none;
 	display: block;
-}
-
-/* Stijl voor uitgeschakelde up-knop */
-
-.disable-up {
-	background-color: #ffffff;
-	cursor: not-allowed;
 }
 
 /* Drag and drop */
