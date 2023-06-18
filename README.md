@@ -1,7 +1,7 @@
 # Procesverslag
 **Auteur:** Taurese Usman
 
-Bekijk de websites in Google Chrome!
+Bekijk de websites in Google Chrome (versie 114.0.5735.133) dit is de huidige versie
 
 **De opdrachten:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
