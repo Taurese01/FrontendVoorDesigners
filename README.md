@@ -1,6 +1,8 @@
 # Procesverslag
 **Auteur:** Taurese Usman
 
+Bekijk de websites in Google Chrome!
+
 **De opdrachten:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
 
