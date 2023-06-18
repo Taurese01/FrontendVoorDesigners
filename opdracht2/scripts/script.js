@@ -408,13 +408,13 @@ shuffleButton.addEventListener("click", shuffleList);
 // Deze code zorgt ervoor dat je de liedjes (li's) opnieuw kan ordenen met de pijltjes knoppen (pijltje omhoog voor omhoog en pijltje omlaag voor omlaag).
 // Regel 411 tot en met 459
 
-const OmhoogKnop = document.querySelectorAll('.omhoog');
-const OmlaagKnop = document.querySelectorAll('.omlaag');
+var OmhoogKnop = document.querySelectorAll('.omhoog');
+var OmlaagKnop = document.querySelectorAll('.omlaag');
 
 function Omhoog() {
-  const listItem = document.activeElement.closest('li'); // Vind de list item die het dichtste bij het pijltje zit.
+  var listItem = document.activeElement.closest('li'); // Vind de list item die het dichtste bij het pijltje zit.
   if (listItem) {
-    const VorigItem = listItem.previousElementSibling; // Vind het vorige element van het list item
+    var VorigItem = listItem.previousElementSibling; // Vind het vorige element van het list item
     if (VorigItem) {
       listItem.parentNode.insertBefore(listItem, VorigItem); // Verplaats het list item voor het vorige element
       listItem.classList.add('move-up'); // maakt de "move up" class aan voor de animatie in css
@@ -426,9 +426,9 @@ function Omhoog() {
 }
 
 function Omlaag() {
-  const listItem = document.activeElement.closest('li'); // Vind de list item die het dichtste bij het pijltje zit.
+  var listItem = document.activeElement.closest('li'); // Vind de list item die het dichtste bij het pijltje zit.
   if (listItem) {
-    const VolgendItem = listItem.nextElementSibling; // Vind het volgende element van het list item
+    var VolgendItem = listItem.nextElementSibling; // Vind het volgende element van het list item
     if (VolgendItem) {
       listItem.parentNode.insertBefore(VolgendItem, listItem); // Verplaats het list item naar het volgende element
       listItem.classList.add('move-down'); // Maakt de "move down" class aan voor de animatie in css
