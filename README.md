@@ -224,13 +224,13 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
   <img src="readme-images/volledig-mobiel1.png" width="200px" alt="uitkomst opdracht 2">
   
   
-  **Mobiele versie van de site</bold>
+  **Mobiele versie van de site**
   
   
   <img src="readme-images/volledig-mobiel2.png" width="200px" alt="uitkomst opdracht 2">
   
   
- **Mini mobiele versie van de site (was mobile first begonnen maar niet zo klein)</bold>
+ **Mini mobiele versie van de site (was mobile first begonnen maar niet zo klein)**
 
 
   ### Dit ging goed/Heb ik geleerd: 
