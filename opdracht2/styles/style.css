@@ -84,7 +84,6 @@ html {
 body {
 	font-family: eenfont, sans-serif;
 	color: var(--color-text);
-	/* background-color: var(--color-background); ALLEEN VOOR DESKTOP VERSIE */
 	max-width: 24.5em;
 	margin: auto;
 	border-radius: 0.5em;
