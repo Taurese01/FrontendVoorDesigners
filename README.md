@@ -214,20 +214,20 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/volledig-beeld.png" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/volledige-beeld.png" width="150px" alt="uitkomst opdracht 2">
   
   
   Desktop versie van de site
   
   
   
-  <img src="readme-images/volledig-mobiel1.png" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/volledig-mobiel1.png" width="150px" alt="uitkomst opdracht 2">
   
   
   Mobiele versie van de site
   
   
-  <img src="readme-images/volledig-mobiel2.png" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/volledig-mobiel2.png" width="150px" alt="uitkomst opdracht 2">
   
   
   Mini mobiele versie van de site (was mobile first begonnen maar niet zo klein)
