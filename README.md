@@ -244,5 +244,8 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/volledige-beeld.png" width="200px" alt="uitkomst opdracht 2">
+  
+   **Ik ben best teleurgesteld met het pauzeren van de liedjes, je moet jammergenoeg op het nieuwe liedje op pauze drukken om beide audios te stoppen, dit is omdat ik gebruik heb gemaakt met een functie die alle audio bestanden in de HTML stopt.**
 </details>
+
