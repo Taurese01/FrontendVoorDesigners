@@ -253,7 +253,7 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
   
 <img src="readme-images/gelukt3.png" width="200px" alt="uitkomst opdracht 2">
   
-   **Ik ben bij dat de website volledig gebruikbaar is met het toetsenboard en de arrow keys, dit heb ik gedaan in de HTML d.m.v li tabel index in de html (anders kon ik de li's niet selecteren voor de arrow buttons) en in de Javascript heb ik gebruik gemaakt van met behulp van keydowns **
+**Ik ben bij dat de website volledig gebruikbaar is met het toetsenboard en de arrow keys, dit heb ik gedaan in de HTML d.m.v li tabel index in de html (anders kon ik de li's niet selecteren voor de arrow buttons) en in de Javascript heb ik gebruik gemaakt van met behulp van keydowns**
   
   
 
