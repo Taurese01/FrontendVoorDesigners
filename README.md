@@ -273,5 +273,11 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
    **Een ander ding waar ik teleurgesteld mee ben is dat de animatie bij de up button niet goed werkt, ik heb geen idee waarom dit zo is want bij de omlaag knop werkt de animatie wel uitstekend.**
   
   
+  <img src="readme-images/mislukt3.png" width="200px" alt="uitkomst opdracht 2">
+  <img src="readme-images/mislukt3-1.png" width="200px" alt="uitkomst opdracht 2">
+  
+   **Ik ben minder tevreden over hoe ik de li's heb moeten vormgeven in de CSS, ik heb veel dubbel werk moeten doen met sections, en flexbox omdat ik geen niet zo veel kennis heb van grid. Ook heb ik hierdoor een padding-left moeten gebruiken. Sanne zei dat dit geen probleem was en mocht, maar zelf ben ik er toch niet zo blij mee**
+  
+  
 </details>
 
