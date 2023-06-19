@@ -253,7 +253,7 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
  <img src="readme-images/mislukt2.png" width="200px" alt="uitkomst opdracht 2">
  <img src="readme-images/mislukt2-1.png" width="200px" alt="uitkomst opdracht 2">
   
-   **Een ander ding waar ik teleurgesteld mee ben is dat de animatie bij de up button niet goed werkt, ik heb geen idee waarom dit zo is want bij de omlaag knop werkt de button wel uitstekend.**
+   **Een ander ding waar ik teleurgesteld mee ben is dat de animatie bij de up button niet goed werkt, ik heb geen idee waarom dit zo is want bij de omlaag knop werkt de animatie wel uitstekend.**
   
   
 </details>
