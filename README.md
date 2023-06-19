@@ -236,7 +236,9 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/volledige-beeld.png" width="200px" alt="uitkomst opdracht 2">
+  
+   **Ik ben erg blij met de visuele uitkomst van de site, ik heb er hard aan gewerkt en ben blij met het resultaat.**
 
 
   ### Dit was lastig/Is niet gelukt:
