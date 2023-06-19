@@ -244,6 +244,18 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
   <img src="readme-images/gelukt1.png" width="200px" alt="uitkomst opdracht 2">
   
    **Ik ben erg blij dat de liedjes afspelen wanneer er op de start knop word gedrukt van de website, dit is toch wel een fundamenteel ding van mijn website en ben erg blij dat dit werkt.**
+  
+  
+    <img src="readme-images/gelukt2.png" width="200px" alt="uitkomst opdracht 2">
+  
+   **Ik ben blij dat de prullebak functie werkt, deze code hiervan is vrij simpel maar erg effectief en essentieel in mijn website, door op het prullenbakje te drukken word de desbetreffende li verwijderd (inclusief audio ect).**
+  
+  
+      <img src="readme-images/gelukt3.png" width="200px" alt="uitkomst opdracht 2">
+  
+   **Ik ben bij dat de website volledig gebruikbaar is met het toetsenboard en de arrow keys, dit heb ik gedaan in de HTML d.m.v li tabel index in de html (anders kon ik de li's niet selecteren voor de arrow buttons) en in de Javascript heb ik gebruik gemaakt van met behulp van keydowns **
+  
+  
 
 
   ### Dit was lastig/Is niet gelukt:
