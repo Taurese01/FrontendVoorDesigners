@@ -249,10 +249,12 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
    **Ik ben best teleurgesteld met het pauzeren van de liedjes, je moet jammergenoeg op het nieuwe liedje op pauze drukken om beide audios te stoppen, dit is omdat ik gebruik heb gemaakt met een functie die alle audio bestanden in de HTML stopt.**
   
   
+  
  <img src="readme-images/mislukt2.png" width="200px" alt="uitkomst opdracht 2">
  <img src="readme-images/mislukt2-1.png" width="200px" alt="uitkomst opdracht 2">
   
-  
    **Een ander ding waar ik teleurgesteld mee ben is dat de animatie bij de up button niet goed werkt, ik heb geen idee waarom dit zo is want bij de omlaag knop werkt de button wel uitstekend.**
+  
+  
 </details>
 
