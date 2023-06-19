@@ -239,6 +239,11 @@ Dit was een erg makkelijke oplossing om te toe te passen, ik hoefde alleen 'Touc
   <img src="readme-images/volledige-beeld.png" width="200px" alt="uitkomst opdracht 2">
   
    **Ik ben erg blij met de visuele uitkomst van de site, ik heb er hard aan gewerkt en ben blij met het resultaat.**
+  
+  
+  <img src="readme-images/gelukt1.png" width="200px" alt="uitkomst opdracht 2">
+  
+   **Ik ben erg blij dat de liedjes afspelen wanneer er op de start knop word gedrukt van de website, dit is toch wel een fundamenteel ding van mijn website en ben erg blij dat dit werkt.**
 
 
   ### Dit was lastig/Is niet gelukt:
