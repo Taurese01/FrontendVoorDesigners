@@ -58,7 +58,7 @@ summary {
 	--hover-li-color: #dedede;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--color-text: #111;
 		--color-text2: #d9dbda;
@@ -68,7 +68,7 @@ summary {
 		--button-border-color: #000000;
 		--hover-li-color: #b8b8b8;
 	}
-} */
+}
 
 
 /****************/
