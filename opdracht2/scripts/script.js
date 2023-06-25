@@ -47,15 +47,15 @@ var liedjebezig18 = false;
 var liedjebezig19 = false;
 var liedjebezig20 = false;
 
-// Regel 51 t/m 273 (code word 20 keer herhaald)
+// Regel 53 t/m 272 (code word 20 keer herhaald)
 // De function zorgt ervoor dat er word gekeken of het nummer afspeeld, als dit het geval is dan zet hij deze op pauze, en als dit niet het geval is dan word deze gestart. 
 
 function liedje1() {
   if (liedjebezig1) {
     muziekje1.pause(); // Pauzeer het liedje als het al aan het afspelen is
     liedjebezig1 = false; // Markeer het liedje als niet bezig
-    muziekpauze(); // Zet alle liedjes op pauze (function word later in de code behandeld)
   } else {
+    muziekpauze(); // Zet alle liedjes op pauze (function word later in de code behandeld)
     muziekje1.play(); // Speel het liedje af als het niet bezig is
     liedjebezig1 = true; // Markeert het liedje als bezig
   }
@@ -65,8 +65,8 @@ function liedje2() {
   if (liedjebezig2) {
     muziekje2.pause();
     liedjebezig2 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje2.play();
     liedjebezig2 = true;
 
@@ -77,8 +77,8 @@ function liedje3() {
   if (liedjebezig3) {
     muziekje3.pause();
     liedjebezig3 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje3.play();
     liedjebezig3 = true;
   }
@@ -88,8 +88,8 @@ function liedje4() {
   if (liedjebezig4) {
     muziekje4.pause();
     liedjebezig4 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje4.play();
     liedjebezig4 = true;
   }
@@ -99,8 +99,8 @@ function liedje5() {
   if (liedjebezig5) {
     muziekje5.pause();
     liedjebezig5 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje5.play();
     liedjebezig5 = true;
   }
@@ -110,8 +110,8 @@ function liedje6() {
   if (liedjebezig6) {
     muziekje6.pause();
     liedjebezig6 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje6.play();
     liedjebezig6 = true;
   }
@@ -121,8 +121,8 @@ function liedje7() {
   if (liedjebezig7) {
     muziekje7.pause();
     liedjebezig7 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje7.play();
     liedjebezig7 = true;
   }
@@ -132,8 +132,8 @@ function liedje8() {
   if (liedjebezig8) {
     muziekje8.pause();
     liedjebezig8 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje8.play();
     liedjebezig8 = true;
   }
@@ -143,8 +143,8 @@ function liedje9() {
   if (liedjebezig9) {
     muziekje9.pause();
     liedjebezig9 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje9.play();
     liedjebezig9 = true;
   }
@@ -154,8 +154,8 @@ function liedje10() {
   if (liedjebezig10) {
     muziekje10.pause();
     liedjebezig10 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje10.play();
     liedjebezig10 = true;
   }
@@ -165,8 +165,8 @@ function liedje11() {
   if (liedjebezig11) {
     muziekje11.pause();
     liedjebezig11 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje11.play();
     liedjebezig11 = true;
   }
@@ -176,8 +176,8 @@ function liedje12() {
   if (liedjebezig12) {
     muziekje12.pause();
     liedjebezig12 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje12.play();
     liedjebezig12 = true;
   }
@@ -187,8 +187,8 @@ function liedje13() {
   if (liedjebezig13) {
     muziekje13.pause();
     liedjebezig13 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje13.play();
     liedjebezig13 = true;
   }
@@ -198,8 +198,8 @@ function liedje14() {
   if (liedjebezig14) {
     muziekje14.pause();
     liedjebezig14 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje14.play();
     liedjebezig14 = true;
   }
@@ -209,8 +209,8 @@ function liedje15() {
   if (liedjebezig15) {
     muziekje15.pause();
     liedjebezig15 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje15.play();
     liedjebezig15 = true;
   }
@@ -220,8 +220,8 @@ function liedje16() {
   if (liedjebezig16) {
     muziekje16.pause();
     liedjebezig16 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje16.play();
     liedjebezig16 = true;
   }
@@ -231,8 +231,8 @@ function liedje17() {
   if (liedjebezig17) {
     muziekje17.pause();
     liedjebezig17 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje17.play();
     liedjebezig17 = true;
   }
@@ -242,8 +242,8 @@ function liedje18() {
   if (liedjebezig18) {
     muziekje18.pause();
     liedjebezig18 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje18.play();
     liedjebezig18 = true;
   }
@@ -253,8 +253,8 @@ function liedje19() {
   if (liedjebezig19) {
     muziekje19.pause();
     liedjebezig19 = false;
-    muziekpauze();
   } else {
+    muziekpauze();
     muziekje19.play();
     liedjebezig19 = true;
   }
@@ -264,10 +264,12 @@ function liedje20() {
   if (liedjebezig20) {
     muziekje20.pause();
     liedjebezig20 = false;
-    muziekpauze();
+  
   } else {
+    muziekpauze();
     muziekje20.play();
     liedjebezig20 = true;
+
   }
 }
 
@@ -279,6 +281,7 @@ function muziekpauze() {
   pauze.forEach(function (audio) {
     audio.pause(); // Pauzeer elke audio file in de html omdat er gebruik word gemaakt van de forEach en de querySelectorAll
   });
+  
 }
 
 // De Event listeners voor het starten van het liedje (wanneer er op de button van een van de liedjes word geklikt speelt de desbetreffende function af)!
@@ -303,7 +306,6 @@ nummer18.addEventListener("click", liedje18);
 nummer19.addEventListener("click", liedje19);
 nummer20.addEventListener("click", liedje20);
 
-
 // hulpbron/inspiratie: code met behulp van Sanne's Codepen Sorteert de code op alfabetisch goed en alfabetisch omgekeerd & https://listjs.com/
 // Code zorgt ervoor dat de sorteer functies werken, deze worden geactiveerd door op de "Titel" of "Duratie" buttons te klikken
 // regel 310 tot en met 356
@@ -317,11 +319,11 @@ var deOpties = {
 var SorteerLijst = new List('theList', deOpties);
 
 // Stap 4.
-var sortVolgordeNaam = 'asc';
-var sortVolgordeTijd = 'asc';
+var sortVolgordeNaam = 'asc'; // De huidige sorteer volgorde voor de tekst word ingesteld op oplopend 
+var sortVolgordeTijd = 'asc'; // De huidige sorteer volgorde voor de tijd word ingesteld op oplopend
 
 function sortLiedjesNaam() {
-  if (sortVolgordeNaam === 'asc') {
+  if (sortVolgordeNaam === 'asc') { // Controleert of de sorteer volgorde op naam oplopend is
     SorteerLijst.sort('name', {
       order: 'asc'
     }); // Alfabetische volgorde
@@ -330,14 +332,14 @@ function sortLiedjesNaam() {
   } else {
     SorteerLijst.sort('name', {
       order: 'desc'
-    }); // Omgekeerde alfabetische volgorde
+    }); // Omgekeerde alfabetische volgorde (zoekt naar dichtbijst de letter Z)
     sortVolgordeNaam = 'asc';
     sort.textContent = 'Z-A'; // geprobeerd dit te fixen in de CSS maar tervergeefs (past de tekst in de button aan)
   }
 }
 
 function sortLiedjesTijd() {
-  if (sortVolgordeTijd === 'asc') {
+  if (sortVolgordeTijd === 'asc') { // Controleert of de sorteer volgorde op tijd oplopend is
     SorteerLijst.sort('tijd', {
       order: 'asc'
     }); // Oplopende liedjes duratie (zoekt naar dichtstbijst 0:00)
@@ -367,12 +369,12 @@ new Sortable(list, {
 
 // Verwijder button van de li
 // Dit zorgt ervoor dat wanneer er op een prullenbakje word gedrukt in een specifieke li dat de li word verwijderd
-// Er word gezocht naar de li die het dichtsbijst is (degene van het prullenbakje), deze word word verwijderd uit de ul
+// Er word gezocht naar de li die het dichtsbijst is (degene van het prullenbakje), deze word vervolgens verwijderd uit de ul
 // Regel 372 tot en met 383
 var deleteButtons = document.querySelectorAll('#deleteButton');
 
 function deleteListItem() {
-  var listItem = this.closest('li');  // Er word gezocht naar de li die het dichtsbijst is (degene van het prullenbakje)
+  var listItem = this.closest('li'); // Er word gezocht naar de li die het dichtsbijst is (degene van het prullenbakje)
   if (listItem) {
     listItem.remove(); // verwijderd de li 
   }
@@ -395,9 +397,9 @@ var list = document.querySelector(".list"); // Selecteer de ul met behulp van de
 function shuffleList() {
   var children = list.children;
   var length = children.length; // Lengte van de lijst
-  for (var i = length; i >= 0; i--) {
+  for (var i = length; i >= 0; i--) { // De lengte van de lijst is 20, er word gekeken of de lijst groter of gelijk is als 0. Elke keer als de code word uitgevoerd gaat er 1 af totdat het de 0 heeft bereikt
     var randomIndex = Math.random() * i | 0; // Kies een willekeurig getal tussen 0 en i 
-    list.appendChild(children[randomIndex]); // Verplaatst het naar het einde van de lijst met liedjes
+    list.appendChild(children[randomIndex]); // Verplaatst de li's achteraan in de lijst
   }
 }
 shuffleButton.addEventListener("click", shuffleList);
@@ -417,10 +419,16 @@ function Omhoog() {
     var VorigItem = listItem.previousElementSibling; // Vind het vorige element van het list item
     if (VorigItem) {
       listItem.parentNode.insertBefore(listItem, VorigItem); // Verplaats het list item voor het vorige element
-      listItem.classList.add('move-up'); // maakt de "move up" class aan voor de animatie in css
+
       setTimeout(() => {
-        listItem.classList.remove('move-up'); // Verwijderd de "move-up" class na 0.3 seconden 
-      }, 300);
+        listItem.classList.add('moving', 'move-up'); // maakt de "move up" class aan voor de animatie in css
+        setTimeout(() => {
+          listItem.classList.remove('move-up'); // Verwijderd de "move-up" class na 0.3 seconden 
+          setTimeout(() => {
+            listItem.classList.remove('moving'); // Verwijderd de "moving" class na 0.3 seconden 
+          }, 600);
+        }, 650);
+      }, 50);
     }
   }
 }
@@ -431,10 +439,11 @@ function Omlaag() {
     var VolgendItem = listItem.nextElementSibling; // Vind het volgende element van het list item
     if (VolgendItem) {
       listItem.parentNode.insertBefore(VolgendItem, listItem); // Verplaats het list item naar het volgende element
-      listItem.classList.add('move-down'); // Maakt de "move down" class aan voor de animatie in css
+
+      listItem.classList.add('moving', 'move-down'); // Maakt de "move down" class aan voor de animatie in css
       setTimeout(() => {
-        listItem.classList.remove('move-down'); // Verwijderd de "move-down" class na 0.3 seconden 
-      }, 300);
+        listItem.classList.remove('moving', 'move-down'); // Verwijderd de "move-down" class na 0.3 seconden 
+      }, 600);
     }
   }
 }
@@ -471,20 +480,67 @@ var AfspelenAlGestart = false; // Geeft aan of het afspelen van alle liedjes al 
 
 function SpeelLiedjeAf() {
   if (HuidigLiedje < DeLiedjes.length) {
-    DeLiedjes[HuidigLiedje].play(); // Speel het huidige liedje af
+    if (DeLiedjes[HuidigLiedje].paused || DeLiedjes[HuidigLiedje].ended) {
+      DeLiedjes[HuidigLiedje].play(); // Speel het huidige liedje af als het gepauzeerd is of is afgelopen
+      AllesAfspelen.textContent = "Pauzeren"; // Verander de tekst van de knop naar "pauzeren"
+    } else {
+      DeLiedjes[HuidigLiedje].pause(); // Pauzeer het huidige liedje als het al aan het afspelen is
+      AllesAfspelen.textContent = "Verder met afspelen"; // Verander de tekst van de knop naar "afspelen"
+    }
+    
     DeLiedjes[HuidigLiedje].addEventListener("ended", function () {
-      HuidigLiedje++; // Ga naar het volgende liedje als het huidige liedje is afgelopen d.m.v de ++ word de steeds verhoogd met 1
+      HuidigLiedje++; // Ga naar het volgende liedje als het huidige liedje is afgelopen
       SpeelLiedjeAf(); // Speel het volgende liedje af
     });
   } else {
-    HuidigLiedje = 0; // Wanneer alle liedjes zijn afgespeeld, reset het de lijst
-    AfspelenAlGestart = false; // Markeert het afspelen van de liedjes als niet gestart
+    HuidigLiedje = 0; // Wanneer alle liedjes zijn afgespeeld, reset de lijst
+    AfspelenAlGestart = false; // Markeer het afspelen van de liedjes als niet gestart
+    AllesAfspelen.textContent = "alles afspelen"; // Verander de tekst van de knop naar "alles afspelen"
   }
 }
 
 AllesAfspelen.addEventListener("click", function () {
   if (!AfspelenAlGestart) {
-    AfspelenAlGestart = true; // Markeert het afspelen als gestart
+    muziekpauze(); // zorgt ervoor dat de losse liedjes stoppen wanneer er op alles afspelen word gedrukt
+    AfspelenAlGestart = true; // Markeer het afspelen als gestart
+    AllesAfspelen.textContent = "pauzeren"; // Verander de tekst van de knop naar "pauzeren"
     SpeelLiedjeAf(); // Start het afspelen van de liedjes
+  } else {
+    if (DeLiedjes[HuidigLiedje].paused) {
+      muziekpauze(); // zorgt ervoor dat de losse liedjes stoppen wanneer er op alles afspelen word gedrukt
+      DeLiedjes[HuidigLiedje].play(); // Ga verder met afspelen als het liedje is gepauzeerd
+      AllesAfspelen.textContent = "Pauzeren"; // Verander de tekst van de knop naar "pauzeren"
+    } else {
+      DeLiedjes[HuidigLiedje].pause(); // Pauzeer het huidige liedje als het al aan het afspelen is
+      AllesAfspelen.textContent = "Verder met afspelen"; // Verander de tekst van de knop naar "afspelen"
+    }
   }
 });
+
+
+
+
+
+//   // Speel het geselecteerde liedje af
+//   if (liedjebezig[index]) {
+//     audio[index].pause();
+//     liedjebezig[index] = false;
+//   } else {
+//     muziekpauze();
+//     audio[index].play();
+//     liedjebezig[index] = true;
+//   }
+
+// // Event listeners voor het afspelen van individuele liedjes
+// nummer1.addEventListener("click", function() {
+//   speelLiedjeAf(0);
+// });
+// nummer2.addEventListener("click", function() {
+//   speelLiedjeAf(1);
+// });
+// // Voeg hier de overige event listeners toe voor de andere liedjes (nummer3, nummer4, enz.)
+
+// // Functie voor het afspelen van alle liedjes
+
+// // Event listener voor het afspelen van alle liedjes
+// AllesAfspelen.addEventListener("click", speelAlleLiedjesAf);

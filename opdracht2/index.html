@@ -30,13 +30,18 @@
 		<button class="sort1" data-sort="name" type="button">Titel</button>
 		<button class="sort2" data-sort="tijd" type="button" data-default-order='asc'>Duratie</button>
 		<button type="button" id="shuffle" value="shuffle">Schuffle Lijst</button>
+		<button class="Alles-Afspelen">Alles Afspelen</button>
 	</form>
+
+			<!-- Dit geeft de gebruiker ook nog een optie om de lijst volledig achter elkaar af te laten spelen, erg handig op een feestje -->
+			
 
 
 	<!-- De sections in de li mocht van sanne, dit heeft hij gezegt in de les tegen mij! -->
 	<div id="theList">
 
 		<ul class="list">
+
 			<!-- De li's worden 20x herhaald, allemaal met een eigen class, naam tijd. De up & down buttons en het prullenbakje is voor alle gelijk -->
 			<!-- De tabelindex is toegevoegd zodat de arrow buttons werken (nu kunnen de li's geselecteerd worden) De code word 20 keer herhaald dus ik bespreek hem alleen bij de eerste met comments-->
 			<li tabindex="0">
@@ -58,6 +63,7 @@
 				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
 
+
 			<li tabindex="0">
 				<audio id="muziekje2" src="muziek/Heartless.mp3" alt="bron: Heartless van Kanye West"></audio>
 				<input type="checkbox" class="nummer2" />
@@ -72,7 +78,8 @@
 				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 			</li>
 
-			<<li tabindex="0">
+
+			<li tabindex="0">
 				<audio id="muziekje3" src="muziek/BlindingLights.mp3" alt="bron: Blinding Lights van The Weeknd"></audio>
 				<input type="checkbox" class="nummer3" />
 				<section>
@@ -85,6 +92,7 @@
 				</section>
 				<button type="button" id="deleteButton" value="verwijderen">&#x1F5D1;</button>
 				</li>
+
 
 				<li tabindex="0">
 					<audio id="muziekje4" src="muziek/Nights.mp3" alt="bron: Nights van Frank Ocean"></audio>
@@ -326,9 +334,6 @@
 
 
 		</ul>
-
-		<!-- Dit geeft de gebruiker ook nog een optie om de lijst volledig achter elkaar af te laten spelen, erg handig op een feestje -->
-		<button class="Alles-Afspelen">Alles Afspelen</button>
 
 	</div>
 	<!-- de scripts naar de javasccript library's en het bestand-->

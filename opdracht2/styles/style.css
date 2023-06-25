@@ -2,27 +2,27 @@
 /* FONTS */
 /*********/
 @font-face {
-	font-family: 'Spotify-bold';
-	src: url('../fonts/gotham-bold-webfont.woff') format('woff2'),
-		url('../fonts/gotham-bold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Spotify-bold';
+  src: url('../fonts/gotham-bold-webfont.woff') format('woff2'),
+    url('../fonts/gotham-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Spotify-regular';
-	src: url('../fonts/gotham-light-webfont.woff') format('woff2'),
-		url('../fonts/gotham-light-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Spotify-regular';
+  src: url('../fonts/gotham-light-webfont.woff') format('woff2'),
+    url('../fonts/gotham-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Spotify-superbold';
-	src: url('../fonts/gotham-black-webfont.woff') format('woff2'),
-		url('../fonts/gotham-black-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Spotify-superbold';
+  src: url('../fonts/gotham-black-webfont.woff') format('woff2'),
+    url('../fonts/gotham-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -34,12 +34,12 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button:not(:disabled),
 summary {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 
@@ -47,28 +47,28 @@ summary {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text: #111;
-	--color-text2: #fff;
-	--color-background: #ffffff;
-	--color-background2: #1db954;
-	--button-focus-hover-background: #1db954;
-	--button-border-color: #000000;
-	--drag-and-drop-background: #e1fceb;
-	--hover-li-color: #dedede;
+  /* startje */
+  --color-text: #111;
+  --color-text2: #fff;
+  --color-background: #ffffff;
+  --color-background2: #1db954;
+  --button-focus-hover-background: #1db954;
+  --button-border-color: #000000;
+  --drag-and-drop-background: #e1fceb;
+  --hover-li-color: #dedede;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-text: #111;
-		--color-text2: #d9dbda;
-		--color-background: #d9dbda;
-		--color-background2: #212121;
-		--button-focus-hover-background: #e6e6e6;
-		--button-border-color: #000000;
-		--hover-li-color: #b8b8b8;
-	}
-}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #111;
+    --color-text2: #d9dbda;
+    --color-background: #d9dbda;
+    --color-background2: #212121;
+    --button-focus-hover-background: #e6e6e6;
+    --button-border-color: #000000;
+    --hover-li-color: #b8b8b8;
+  }
+} */
 
 
 /****************/
@@ -78,271 +78,310 @@ summary {
 
 /* Styling van de html en body (de groene achterkleur, positionering, width ect. */
 html {
-	background-color: var(--color-background2);
+  background-color: var(--color-background2);
 }
 
 body {
-	font-family: eenfont, sans-serif;
-	color: var(--color-text);
-	max-width: 24.5em;
-	margin: auto;
-	border-radius: 0.5em;
+  font-family: eenfont, sans-serif;
+  color: var(--color-text);
+  max-width: 24.5em;
+  margin: auto;
+  border-radius: 0.5em;
 }
 
 /* algemene styling voor de ul */
 
 ul {
-	list-style: none;
-	padding: 0;
-	display: grid;
-	grid-gap: 1.5em;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 1.5em;
+  
 }
+
+
 
 
 /* Style voor o.a. voor form, h1, h2, p, li */
 
 h1 {
-	font-family: 'Spotify-superbold', sans-serif;
-	text-align: center;
-	color: var(--color-text2);
-	font-size: 2.8125em;
+  font-family: 'Spotify-superbold', sans-serif;
+  text-align: center;
+  color: var(--color-text2);
+  font-size: 2.8125em;
 }
 
 h2 {
-	font-family: 'Spotify-bold', sans-serif;
-	text-align: center;
-	color: var(--color-text2);
-	font-size: 1.5625em;
+  font-family: 'Spotify-bold', sans-serif;
+  text-align: center;
+  color: var(--color-text2);
+  font-size: 1.5625em;
 }
 
 body>p {
-	font-family: 'Spotify-regular', sans-serif;
-	font-size: 0.9375em;
-	text-align: justify;
-	color: var(--color-text2);
-	padding-bottom: 0.5em;
+  font-family: 'Spotify-regular', sans-serif;
+  font-size: 0.9375em;
+  text-align: justify;
+  color: var(--color-text2);
+  padding-bottom: 0.5em;
 }
 
 form {
-	font-family: 'Spotify-regular', sans-serif;
-	text-align: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: grid;
+  flex-direction: column;
+  justify-content: stretch;
+  grid-gap: 1em;
 }
 
 form>button {
-	font-family: 'Spotify-bold', sans-serif;
-	border: 0.1875em solid var(--button-border-color);
-	padding: 0.875em 0.9375em;
-	border-radius: 0.8125em;
-	opacity: 1;
-	background-color: var(--color-background);
+  font-family: 'Spotify-bold', sans-serif;
+  border: 0.1875em solid var(--button-border-color);
+  padding: 0.875em 0.9375em;
+  border-radius: 0.8125em;
+  opacity: 1;
+  background-color: var(--color-background);
 }
 
 form>p {
-	color: var(--color-text2);
-	font-size: 1em;
+  color: var(--color-text2);
+  font-size: 1em;
+  font-family: 'Spotify-regular', sans-serif;
+  text-align: center;
 }
 
 form>button:focus {
-	color: var(--color-text2);
-	background-color: var(--button-border-color);
+  color: var(--color-text2);
+  background-color: var(--button-border-color);
 }
 
 
 label {
-	line-height: 1em;
-	color: var(--color-text2);
+  line-height: 1em;
+  color: var(--color-text2);
 }
 
 /* basis styling voor de Li's (liedjes) (display flex en flex direction row zorgen ervoor dat list items zich onder elkaar bevinden  */
 
+.list{
+  border-radius: 0.8125em;
+    display: grid;
+    grid-gap: 0.5em;
+}
 li {
-	background: var(--color-background);
-	border: 0.1875em solid var(--button-border-color);
-	border-radius: 0.8125em;
-	display: flex;
-	flex-direction: row;
-	padding: 0.5em;
-	cursor: grab;
+  background: var(--color-background);
+  border: 0.1875em solid var(--button-border-color);
+  border-radius: 0.8125em;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  cursor: grab;
 }
 
 /* Code van hoe de buttons / li / checkboxes er uit zien wanneer deze worden aangeklikt zijn of er overheen wordt gehoverd */
 
 li:focus,
 li:focus-within{
-	border: 0.5em solid var(--button-border-color);
-	transition: 0.5s ease;
+  border: 0.5em solid var(--button-border-color);
+  transition: 0.5s ease;
 }
 
 li:hover {
-	background-color: var(--hover-li-color);
+  background-color: var(--hover-li-color);
 }
 
 li>section button:nth-of-type(1):focus,
 li>section button:nth-of-type(1):hover {
-	background-color: var(--button-focus-hover-background);
-	border-radius: 0.1em;
-	border: 0.125em solid var(--button-border-color);
-	cursor: pointer;
+  background-color: var(--button-focus-hover-background);
+  border-radius: 0.1em;
+  border: 0.125em solid var(--button-border-color);
+  cursor: pointer;
 }
 
 li>section button:nth-of-type(2):focus,
 li>section button:nth-of-type(2):hover {
-	background-color: var(--button-focus-hover-background);
-	border-radius: 0.1em;
-	cursor: pointer;
-	border: 0.125em solid var(--button-border-color);
+  background-color: var(--button-focus-hover-background);
+  border-radius: 0.1em;
+  cursor: pointer;
+  border: 0.125em solid var(--button-border-color);
 }
 
 li>button:nth-of-type(1):focus,
 li>button:nth-of-type(1):hover {
-	background-color: var(--button-focus-hover-background);
-	border-radius: 0.1em;
-	cursor: pointer;
-	border: 0.125em solid var(--button-border-color);
+  background-color: var(--button-focus-hover-background);
+  border-radius: 0.1em;
+  cursor: pointer;
+  border: 0.125em solid var(--button-border-color);
 }
 
 ul li input[type="checkbox"]:focus,
 ul li input[type="checkbox"]:hover {
-	border: 0.09375em solid var(--button-border-color);
-	border-radius: 2em;
-	background-color: var(--button-focus-hover-background);
+  border: 0.09375em solid var(--button-border-color);
+  border-radius: 2em;
+  background-color: var(--button-focus-hover-background);
 }
 
 /* uiterlijk van de buttons in de li (pijltjes, delete button) */
 
 li>section button:nth-of-type(1) {
-	transform: rotate(-90deg);
-	background: none;
-	border: none;
-	font-size: 1.5em;
+  transform: rotate(-90deg);
+  background: none;
+  border: none;
+  font-size: 1.5em;
 }
 
 li>section button:nth-of-type(2) {
-	transform: rotate(-270deg);
-	background: none;
-	border: none;
-	font-size: 1.5em;
+  transform: rotate(-270deg);
+  background: none;
+  border: none;
+  font-size: 1.5em;
 }
 
 /* helaas positionering alleen kunnen fixen met padding-left */
 
 li>section:nth-of-type(2) {
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	padding-left: 6.5em;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* padding-left: 6.5em; */
 }
 
 li>button:nth-of-type(1) {
-	background: none;
-	border: none;
-	font-size: 1.5em;
+  background: none;
+  border: none;
+  font-size: 1.5em;
 }
 
 /* styling voor tekst binnen de li's  */
 
 li>section:nth-of-type(1) {
-	padding-left: 0.5em;
+  padding-left: 0.5em;
 }
 
 li>section p:nth-of-type(1) {
-	font-family: 'Spotify-bold', sans-serif;
+  font-family: 'Spotify-bold', sans-serif;
 }
 
 li>section p:nth-of-type(2) {
-	font-family: 'Spotify-regular', sans-serif;
+  font-family: 'Spotify-regular', sans-serif;
 }
 
 
 /* uiterlijk van de buttons in de li (pijltjes, delete button) */
 
 ul li img:nth-of-type(1) {
-	height: 3.125em;
-	width: 3.125em;
-	margin: auto;
+  height: 3.125em;
+  width: 3.125em;
+  margin: auto;
 }
 
 /* styling voor de alles afspelen button */
+/* 
+body>button {
+  font-family: 'Spotify-bold', sans-serif;
+  border: 0.1875em solid var(--button-border-color);
+  padding: 0.875em 1.5625em;
+  border-radius: 0.8125em;
+  opacity: 1;
+  width: 100%;
+  margin-top: 1em;
+} */
 
-div>button {
-	font-family: 'Spotify-bold', sans-serif;
-	border: 0.1875em solid var(--button-border-color);
-	padding: 0.875em 1.5625em;
-	border-radius: 0.8125em;
-	opacity: 1;
-	width: 100%;
-	margin-bottom: 1em;
-}
-
-div>button:focus {
-	color: var(--color-text2);
-	background-color: var(--button-border-color);
+body>button:focus {
+  color: var(--color-text2);
+  background-color: var(--button-border-color);
 }
 
 /* Stijl voor de checkbox in li (play en pause button) */
 
 ul li input[type="checkbox"] {
-	content: url('../images/play-button.png');
-	margin: auto;
-	height: 3.125em;
-	width: 3.125em;
-	appearance: none;
+  content: url('../images/play-button.png');
+  margin: auto;
+  height: 3.125em;
+  width: 3.125em;
+  appearance: none;
 }
 
 ul li input[type="checkbox"]:checked {
-	content: url('../images/video-pause-button.png');
-	margin: auto;
-	height: 3.125em;
-	width: 3.125em;
-	appearance: none;
-	display: block;
+  content: url('../images/video-pause-button.png');
+  margin: auto;
+  height: 3.125em;
+  width: 3.125em;
+  appearance: none;
+  display: block;
 }
 
 /* Drag and drop */
 
 li.sortable-ghost {
-	opacity: 0.25;
-	cursor: grabbing;
+  opacity: 0.25;
+  cursor: grabbing;
 }
 
 /* styling van het versleepte item */
 li.sortable-drag {
-	background: var(--drag-and-drop-background);
-	cursor: grab;
+  background: var(--drag-and-drop-background);
+  cursor: grab;
 }
 
 /* Animatie voor de op en neer knoppen en arrow keys */
 
+.moving {
+  transform: translateY(0%);
+  transition: transform 0.6s ease-in;
+}
+
 .move-up {
-  transition: transform 0.6s ease-in; 
+  /* transition: transform .3s ease-in;  */
   transform: translateY(15%); 
 }
 
 .move-down {
-  transition: transform 0.6s ease-in;
+  
   transform: translateY(-15%); 
 }
 
 
+
 /* desktop versie */
-@media (min-width: 60em) {
+@media (min-width: 50em) {
 
-	body {
-		max-width: 30.5em;
-	}
+  body {
+    max-width: 45.5em;
+  }
+  
+  form{
+  font-family: 'Spotify-regular', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  }
 
-	form>button {
-		padding: 0.875em 2em;
-	}
+  form>button {
+    padding: 0.875em 2em;
+  }
 
-	ul {
-		background-color: var(--color-background);
-		border: 2em solid var(--color-background);
-		border-radius: 0.8125em;
-	}
+  ul {
+    background-color: var(--color-background);
+    border: 2em solid var(--color-background);
+    border-radius: 0.8125em;
+  }
+
+
+  li>section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* padding-left: 0.5em; */
+}
+
+.list{
+  border-radius: 0.8125em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
 }
 
 
@@ -352,23 +391,25 @@ li.sortable-drag {
 @media (max-width: 26em) {
 
 
-	body {
-		max-width: 17.5em;
-	}
+  body {
+    max-width: 17.5em;
+  }
 
-	form {
-		display: grid;
-		flex-direction: column;
-		justify-content: stretch;
-		grid-gap: 1em;
-	}
+  form {
+    display: grid;
+    flex-direction: column;
+    justify-content: stretch;
+    grid-gap: 0.5em;
+  }
 
-	form>button {
-		padding: 1.125em 0.125em;
-		border-radius: 1.1875em;
-	}
+  form>button {
+    padding: 1.125em 0.125em;
+    border-radius: 1.1875em;
+  }
 
-	li>section:nth-of-type(2) {
-		padding-left: 0em;
-	}
+  li>section:nth-of-type(2) {
+    padding-left: 0em;
+  }
+
+  
 }
