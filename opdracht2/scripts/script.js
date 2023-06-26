@@ -2,6 +2,7 @@
 
 // de variabele selecteerd alle audio files van de html
 var audio = document.querySelectorAll("Audio");
+var checkboxes = document.querySelectorAll("input[type=checkbox]");
 
 // een variabele aan voor de checkbox afbeelding (de afspelen / pauze knop)
 var nummer1 = document.querySelector(".nummer1");
@@ -275,11 +276,37 @@ function liedje20() {
 
 
 // Stopt alle liedjes (wil hier nog een efficientere versie van maken, waarbij je niet nog op het nieuwe liedje op pauze moet drukken voordat beide liedjes stoppen)
-var pauze = document.querySelectorAll("audio");
+// var pauze = document.querySelectorAll("audio");
 
 function muziekpauze() {
-  pauze.forEach(function (audio) {
-    audio.pause(); // Pauzeer elke audio file in de html omdat er gebruik word gemaakt van de forEach en de querySelectorAll
+  audio.forEach(song => {
+
+    if (song.paused == false){
+      song.pause();
+      var currentCheckbox = song.nextElementSibling;
+      currentCheckbox.checked = false;
+
+      liedjebezig1 = false;
+      liedjebezig2 = false;
+      liedjebezig3 = false;
+      liedjebezig4 = false;
+      liedjebezig5 = false;
+      liedjebezig6 = false;
+      liedjebezig7 = false;
+      liedjebezig8 = false;
+      liedjebezig9 = false;
+      liedjebezig10 = false;
+      liedjebezig11 = false;
+      liedjebezig12 = false;
+      liedjebezig13 = false;
+      liedjebezig14 = false;
+      liedjebezig15 = false;
+      liedjebezig16 = false;
+      liedjebezig17 = false;
+      liedjebezig18 = false;
+      liedjebezig19 = false;
+      liedjebezig20 = false;
+    }
   });
   
 }
@@ -375,6 +402,11 @@ var deleteButtons = document.querySelectorAll('#deleteButton');
 
 function deleteListItem() {
   var listItem = this.closest('li'); // Er word gezocht naar de li die het dichtsbijst is (degene van het prullenbakje)
+  var listAudio = listItem.querySelector('audio');
+  if (listAudio.paused == false){
+    AllesAfspelen.textContent = "Alles Afspelen";
+  }
+
   if (listItem) {
     listItem.remove(); // verwijderd de li 
   }
@@ -482,17 +514,25 @@ function SpeelLiedjeAf() {
   if (HuidigLiedje < DeLiedjes.length) {
     if (DeLiedjes[HuidigLiedje].paused || DeLiedjes[HuidigLiedje].ended) {
       DeLiedjes[HuidigLiedje].play(); // Speel het huidige liedje af als het gepauzeerd is of is afgelopen
+      var currentCheckbox = DeLiedjes[HuidigLiedje].nextElementSibling;
+      currentCheckbox.checked = true;
       AllesAfspelen.textContent = "Pauzeren"; // Verander de tekst van de knop naar "pauzeren"
     } else {
       DeLiedjes[HuidigLiedje].pause(); // Pauzeer het huidige liedje als het al aan het afspelen is
       AllesAfspelen.textContent = "Verder met afspelen"; // Verander de tekst van de knop naar "afspelen"
     }
     
-    DeLiedjes[HuidigLiedje].addEventListener("ended", function () {
+    DeLiedjes[HuidigLiedje].addEventListener("ended", function (event) {
+      var currentCheckbox = event.target.nextElementSibling;
+      currentCheckbox.checked = false;
       HuidigLiedje++; // Ga naar het volgende liedje als het huidige liedje is afgelopen
       SpeelLiedjeAf(); // Speel het volgende liedje af
+
+  
     });
-  } else {
+  } 
+  
+  else {
     HuidigLiedje = 0; // Wanneer alle liedjes zijn afgespeeld, reset de lijst
     AfspelenAlGestart = false; // Markeer het afspelen van de liedjes als niet gestart
     AllesAfspelen.textContent = "alles afspelen"; // Verander de tekst van de knop naar "alles afspelen"
@@ -503,17 +543,14 @@ AllesAfspelen.addEventListener("click", function () {
   if (!AfspelenAlGestart) {
     muziekpauze(); // zorgt ervoor dat de losse liedjes stoppen wanneer er op alles afspelen word gedrukt
     AfspelenAlGestart = true; // Markeer het afspelen als gestart
-    AllesAfspelen.textContent = "pauzeren"; // Verander de tekst van de knop naar "pauzeren"
+    AllesAfspelen.textContent = "Pauzeren"; // Verander de tekst van de knop naar "pauzeren"
     SpeelLiedjeAf(); // Start het afspelen van de liedjes
   } else {
-    if (DeLiedjes[HuidigLiedje].paused) {
-      muziekpauze(); // zorgt ervoor dat de losse liedjes stoppen wanneer er op alles afspelen word gedrukt
-      DeLiedjes[HuidigLiedje].play(); // Ga verder met afspelen als het liedje is gepauzeerd
-      AllesAfspelen.textContent = "Pauzeren"; // Verander de tekst van de knop naar "pauzeren"
-    } else {
-      DeLiedjes[HuidigLiedje].pause(); // Pauzeer het huidige liedje als het al aan het afspelen is
-      AllesAfspelen.textContent = "Verder met afspelen"; // Verander de tekst van de knop naar "afspelen"
-    }
+    var currentCheckbox = DeLiedjes[HuidigLiedje].nextElementSibling;
+    currentCheckbox.checked = false;
+    AfspelenAlGestart = false;
+    DeLiedjes[HuidigLiedje].pause(); 
+    AllesAfspelen.textContent = "Alles afspelen"; // Verander de tekst van de knop naar "afspelen"
   }
 });
 
